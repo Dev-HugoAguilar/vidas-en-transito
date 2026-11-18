@@ -1,0 +1,124 @@
+{
+  "estado": "disponible",
+  "titulo": "Red ferroviaria de México · ARTF · IDE",
+  "geometria": "ferroviaria.geojson",
+  "resumen": {
+    "elementos": 809,
+    "vertices": 6707,
+    "bbox": [
+      -117.0266,
+      14.6728,
+      -88.1477,
+      32.6649
+    ],
+    "condicion": {
+      "Operación": 696,
+      "Sin uso": 113
+    },
+    "servicio": {
+      "Transporte de carga": 693,
+      "Transporte de carga y pasajeros": 24,
+      "Transporte de pasajeros": 22,
+      "Desocupada": 70
+    },
+    "nivel": {
+      "0": 754,
+      "1": 15,
+      "-1": 40
+    },
+    "fechas_actualizacion": {
+      "min": "2020-12-10",
+      "max": "2023-08-14"
+    },
+    "operador": {
+      "Ferromex": 270,
+      "Ferrosur": 146,
+      "KCSM": 180,
+      "Otros concesionarios": 143,
+      "Sin concesionar/asignar": 70
+    },
+    "ferromex": {
+      "tramos": 270,
+      "campo": "ENTIDAD",
+      "valor": "Ferrocarril Mexicano S.A. de C.V.",
+      "base": "Ferromex es la marca de Ferrocarril Mexicano, S.A. de C.V. (aviso legal de ferromex.mx)"
+    }
+  },
+  "fuente": {
+    "nombre": "Vías ferroviarias",
+    "organismo": "Agencia Reguladora del Transporte Ferroviario (ARTF) · Infraestructura de Datos Espaciales (IDE)",
+    "servicio": "https://services6.arcgis.com/ZP95JslokqLi5f3i/arcgis/rest/services/Vías_ferroviarias/FeatureServer/0",
+    "item": "https://www.arcgis.com/home/item.html?id=89e3adc38d664c5b85bda8e6f09d67e6",
+    "capa": 0,
+    "formato": "FeatureServer de ArcGIS consultado en GeoJSON",
+    "url_ficha_datos_abiertos": "https://www.datos.gob.mx/es/dataset/red_ferroviaria_nacional",
+    "licencia": "Creative Commons Attribution 4.0 (CC BY 4.0) — datos abiertos de ARTF; el ítem de ArcGIS no declara licencia propia",
+    "licencia_url": "https://creativecommons.org/licenses/by/4.0/",
+    "atribucion": "ARTF · IDE · Vías ferroviarias",
+    "descargado": "2026-11-13",
+    "actualizacion_datos": {
+      "min": "2020-12-10",
+      "max": "2023-08-14"
+    },
+    "campos": [
+      "LINEA",
+      "ENTIDAD",
+      "VIA",
+      "TIPO_VIA",
+      "NIVEL",
+      "SERVICIO",
+      "CNDICON",
+      "LONG_",
+      "FECHA_ACT",
+      "PRECISION_"
+    ],
+    "ferromex_cobertura": {
+      "url_corporativo": "https://ferromex.mx/gobierno-corporativo/",
+      "url_cobertura": "https://ferromex.mx/cobertura/",
+      "consultado": "2026-11-13",
+      "cifras": {
+        "km": 11000,
+        "estados": 24,
+        "puertos": 13,
+        "cruces_fronterizos": 6,
+        "nota": "Cifras corporativas de Ferromex; no se usan para dimensionar la geometría."
+      },
+      "redes_en_su_mapa": [
+        "Ferromex",
+        "Ferrosur",
+        "Florida East Coast",
+        "Texas Pacífico",
+        "Fort Worth & Western",
+        "Derechos de Paso",
+        "Chiapas Mayab",
+        "Puertos"
+      ]
+    }
+  },
+  "preparacion": {
+    "crs_origen": "EPSG:3857 (servicio); consultado con outSR=4326",
+    "crs": "EPSG:4326",
+    "transformaciones": "generalización en servidor maxAllowableOffset=0,001° + simplificación Douglas-Peucker 0,003° con shapely (preserve_topology); coordenadas redondeadas a 5 decimales",
+    "validacion": "809 geometrías LineString válidas (shapely is_valid), sin longitud nula, bbox dentro de México, coordenadas de 5 decimales"
+  },
+  "sha256": "1c4af1d0aa5d74014af1994cf9c6cc54d7fb67563c87b806d9fde039ebe57d8c",
+  "sha256_crudo": "e91f57570813026741e7949fcd311923c21643b56b3213d14fd1776b312988c4",
+  "attrapi": {
+    "estado": "no incorporada",
+    "titulo": "Red Ferroviaria Nacional · «Vía férrea, 2025» (ATTRAPI)",
+    "url_ficha": "https://www.datos.gob.mx/es/dataset/red_ferroviaria_nacional_attrapi",
+    "url_recurso": "https://www.datos.gob.mx/es/dataset/red_ferroviaria_nacional_attrapi/resource/538041af-450d-4b25-9b67-67c187a7d57f",
+    "url_descarga": "https://repodatos.atdt.gob.mx/api_update/attrapi/red_ferroviaria_nacional_attrapi/01_via_ferrea.zip",
+    "licencia": "CC BY 4.0",
+    "actualizacion_datos": "16 de abril de 2026",
+    "motivo": "El intento de descarga directa registrado el 13 de noviembre de 2026 respondió HTTP 403 «Access Denied». La capa visible no proviene de este ZIP: se usa el servicio IDE de ARTF, con los mismos campos.",
+    "intentos": [
+      "ZIP oficial con User-Agent y Referer: HTTP 403 (Akamai)",
+      "raíz del CDN y demás recursos: HTTP 403",
+      "/dataset/…/resource/…/download: 302 al mismo CDN y 403",
+      "navegador Chromium real y context.request: 403",
+      "visor vistadatos.gob.mx: 403",
+      "datastore CKAN: 200 con tabla de atributos, sin geometría"
+    ]
+  }
+}

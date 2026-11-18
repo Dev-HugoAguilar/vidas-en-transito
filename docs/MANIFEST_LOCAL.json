@@ -1,0 +1,211 @@
+{
+  "version": "0.34.0",
+  "generated_at": "2026-11-14",
+  "status": "local_only",
+  "main": "index.html",
+  "data_files": [
+    "data.json",
+    "fuentes_ampliadas.json"
+  ],
+  "geography_files": [
+    "geografia/corredor.geojson",
+    "geografia/ferroviaria.json",
+    "geografia/paises.geojson",
+    "geografia/ferroviaria.geojson",
+    "geografia/evidencia_transito.geojson",
+    "geografia/evidencia_transito.json",
+    "geografia/hexbin_muertes.geojson",
+    "geografia/hexbin_muertes.json",
+    "geografia/estados_mexico.geojson",
+    "geografia/paises_hex.geojson"
+  ],
+  "new_chart_panels": 20,
+  "sources": [
+    "OIM DTM route portal",
+    "UPMRIP/SEGOB",
+    "ICIJ/CLIP",
+    "OIM DTM ArcGIS",
+    "EAAF Proyecto Frontera",
+    "REDODEM"
+  ],
+  "modifications": [
+    {
+      "file": "index.html",
+      "defecto": "TypeError: fmtN is not a function en renderExpandedDashboard (dos llamadas usaban fmtN(...) sobre un Intl.NumberFormat); los 20 paneles nuevos no se dibujaban.",
+      "correccion": "Las dos llamadas pasan a fmtN.format(...). Sin cambios en datos, etiquetas ni cifras.",
+      "hash_entregado": "3f7cbf5e0b20c74a3c4f677cb75e29e918a3388177652a925b6fdaa429a7db13"
+    },
+    {
+      "file": "index.html",
+      "cambio": "Se reemplaza la silueta esquemática del bloque «Cartografía de evidencia» por un mapa geográfico real con capas independientes (corredor generalizado de OIM DTM, incidentes ICIJ/CLIP y red ferroviaria declarada pendiente), controles de capa y zoom, leyenda, ficha de selección, notas metodológicas y fuentes.",
+      "alcance": "Solo ese bloque; no cambian indicadores, series, tablas ni otras secciones."
+    },
+    {
+      "file": "index.html",
+      "cambio": "Los paneles categóricos de la serie REDODEM (03 origen, 04 destino, 05 motivos y 07 violencias/perpetradores) pasan de barras y puntos sueltos al componente de burbujas empaquetadas del Atlas vial, portado en burbujas.js.",
+      "alcance": "Solo esas gráficas: mapa, serie anual, matriz edad × género, trama de cobertura y mapas/cartografía no cambian. Títulos, descripciones, notas y cifras se conservan."
+    },
+    {
+      "file": "index.html",
+      "cambio": "Mapa de «Cartografía de evidencia» rediseñado (lienzo y panel lateral, encuadre adaptativo, capas diferenciadas, filtro de incidentes por año) y selección de tramos e incidentes corregida, con ficha completa, limpiar selección y tabla sin mapa.",
+      "alcance": "Solo el mapa; no cambian datos, cifras, títulos, notas ni otras secciones. La capa ferroviaria sigue pendiente de incorporación (el intento de descarga registrado devolvió HTTP 403)."
+    },
+    {
+      "file": "index.html",
+      "cambio": "Bloque «Fuentes, disponibilidad y límites» del mapa reescrito con la redacción corregida; control, leyenda y texto alineados en «pendiente de incorporación».",
+      "alcance": "Solo ese bloque y las etiquetas de estado de la capa ferroviaria. No cambian datos, cifras, títulos ni otras vistas. La capa sigue desactivada: su geometría oficial aún no está incorporada (el intento registrado devolvió HTTP 403)."
+    },
+    {
+      "file": "index.html",
+      "cambio": "Se incorpora al mapa la red ferroviaria real de México (809 tramos lineales) desde el servicio IDE de ARTF, con control activo, estilo por estado operativo, ficha de selección y capa local ferroviaria.geojson.",
+      "alcance": "Solo el mapa: no cambian datos, cifras, títulos ni otras vistas. El SHP de ATTRAPI sigue sin incorporarse (HTTP 403 registrado) y se documenta como fuente pendiente."
+    },
+    {
+      "file": "index.html",
+      "cambio": "Se añade la capa «Tránsito migrante documentado · INM 2023» (13 zonas estatales) y se separa Ferromex dentro de la red ferroviaria oficial mediante el campo ENTIDAD, con filtro por operador y fichas propias.",
+      "alcance": "Solo el mapa: se conservan corredor, incidentes, centros y el resto de vistas. El SHP de ATTRAPI sigue sin incorporarse (HTTP 403 registrado)."
+    },
+    {
+      "file": "index.html",
+      "defecto": "Faltaba una coma en la entradilla del bloque y en su etiqueta accesible («con coordenadas la red ferroviaria»), y el texto inicial de la ficha no mencionaba vías ni zonas.",
+      "correccion": "Se corrigen la coma y el texto de estado inicial de la ficha. Sin cambios en datos, cifras, capas ni interacción.",
+      "alcance": "Solo textos del bloque «Cartografía de evidencia»."
+    },
+    {
+      "file": "index.html",
+      "defecto": "Al acercar el mapa, los círculos de incidentes y los nodos del corredor crecían con la escala y tapaban vías y zonas; las etiquetas también se agrandaban.",
+      "correccion": "Los radios y tamaños de texto se dividen por la escala de la vista en aplicarVista(), de modo que conservan su tamaño en pantalla al hacer zoom.",
+      "alcance": "Solo el zoom del mapa: no cambian datos, capas, filtros, fichas ni textos."
+    },
+    {
+      "file": "index.html",
+      "cambio": "Los puntos de «Incidentes documentados» pasan de verde azulado a rojo oscuro #C43B45 con borde blanco, y el mismo color se aplica al swatch de la capa, al símbolo de la leyenda y a la etiqueta de la ficha del incidente (hover y selección en tonos más oscuros).",
+      "alcance": "Solo el color de esa capa y sus estados. No cambian datos, geometrías, filtros, capas, fichas ni el resto de la paleta."
+    },
+    {
+      "file": "index.html",
+      "cambio": "Se añade en la vista «Muertes documentadas» un mapa hexagonal como pieza principal, con modos Muertes/Desapariciones, medidas de incidentes y personas, filtro de periodo, capas contextuales, fichas por celda, ficha de selección, zoom y tabla accesible.",
+      "alcance": "Solo la vista de muertes y el nuevo módulo hexmap.js. No cambian las demás vistas, sus datos ni sus gráficas."
+    },
+    {
+      "file": "hexmap.js · geografia/hexbin_*",
+      "cambio": "Se incorporan la malla hexagonal y los agregados de OIM MMP (muertes y personas desaparecidas) derivados del CSV público, con licencia CC BY-IGO y totales verificados, más los límites estatales de Natural Earth.",
+      "alcance": "Capas nuevas del mapa hexagonal; no se modifican los archivos de datos existentes."
+    },
+    {
+      "file": "index.html · data.json",
+      "cambio": "Se incorpora el explorador EAAF de Desapariciones con los cuatro indicadores del corte 28-feb-2025 y los agregados separados del 14-ago-2026. Permite abrir banco/mecanismo, serie anual, entidad de México* y país de hallazgo, con barras y tabla accesible del mismo indicador, unidad, corte y nivel. Se añade el respaldo embebido y la herramienta offline preparar_eaaf.py.",
+      "alcance": "Solo la vista Desapariciones y su respaldo. Se conservan las claves previas de data.json, los cinco indicadores EAAF del Panorama, el mapa, los eventos migratorios, las devoluciones y el resto de las vistas. No se infieren edad, sexo ni nacionalidad; las entidades ausentes no se imputan a cero."
+    },
+    {
+      "file": "index.html · data.json · preparar_redodem.py",
+      "cambio": "Se reconstruye la pestaña «04 — Atención y perfiles · detalle» con un UpSet de combinaciones reales de motivos, una matriz de coaparición violencia × perpetrador calculada desde las filas originales, rankings de puntos de menciones y puntos conectados de cobertura del campo por año. Se incorpora un umbral explícito de privacidad 5 para las celdas pequeñas.",
+      "alcance": "Solo la pestaña 04 y sus agregados REDODEM. Se conservan Panorama, EAAF, mapas, eventos migratorios, devoluciones y el resto de las vistas. No se exportan microdatos ni identificadores de fila."
+    }
+  ],
+  "files": [
+    {
+      "igual_al_paquete": false,
+      "path": "index.html",
+      "bytes": 399183,
+      "sha256": "08b9557744d2fe61fcd61f6e687d6f2867f994bd0dbebc98f3a89326a6f9a01b"
+    },
+    {
+      "igual_al_paquete": false,
+      "path": "data.json",
+      "bytes": 198560,
+      "sha256": "d923ebea22030d80cf32e9927c60ccf94a122c94137482ef4eb4e8832860c505",
+      "origen": "datos previos del repositorio + eaaf_public_detail del paquete v0.14.1; se conservan eventos_migratorios y devoluciones"
+    },
+    {
+      "igual_al_paquete": true,
+      "path": "fuentes_ampliadas.json",
+      "bytes": 164065,
+      "sha256": "19ec4aae287a9da3a3dbc21167edfb3a915c1fe057fa351277104da07bcb63b1"
+    },
+    {
+      "igual_al_paquete": false,
+      "origen": "derivado en preparar_cartografia.py",
+      "path": "geografia/corredor.geojson",
+      "bytes": 2944,
+      "sha256": "ebf8a2a2c19ff4acbfb1eb060bf3597cc4b780fe87de5547e424f13a8221eeca"
+    },
+    {
+      "igual_al_paquete": false,
+      "origen": "estado de la capa oficial (pendiente de incorporación; el intento registrado devolvió HTTP 403)",
+      "path": "geografia/ferroviaria.json",
+      "bytes": 4730,
+      "sha256": "96acfee7a0ef173452c0ab538311ab24714d09354d6fc791840f0d37d1688552"
+    },
+    {
+      "igual_al_paquete": false,
+      "origen": "derivado en preparar_cartografia.py",
+      "path": "geografia/paises.geojson",
+      "bytes": 62665,
+      "sha256": "6325e36b0a8d404a9a9d1045d73445b2c36ad37b830735345bb89736f4dc9da8"
+    },
+    {
+      "igual_al_paquete": false,
+      "origen": "port del componente de burbujas del Atlas vial (d3-hierarchy, ISC)",
+      "path": "burbujas.js",
+      "bytes": 31184,
+      "sha256": "eda1047090ceefb6b703a0b1f51944ac149af499b19f9291b43ecf64a45a33cb"
+    },
+    {
+      "igual_al_paquete": false,
+      "origen": "ARTF · IDE · servicio «Vías ferroviarias» (descarga y simplificación el 13-nov-2026)",
+      "path": "geografia/ferroviaria.geojson",
+      "bytes": 427876,
+      "sha256": "1c4af1d0aa5d74014af1994cf9c6cc54d7fb67563c87b806d9fde039ebe57d8c"
+    },
+    {
+      "path": "geografia/evidencia_transito.geojson",
+      "bytes": 76794,
+      "sha256": "314ab5ada5cee301ecbaa9045800791f363c19ca953bb7a13f918aef87e34dc2",
+      "igual_al_paquete": false,
+      "origen": "zonas estatales del INM 2023 sobre límites Natural Earth (dominio público)"
+    },
+    {
+      "path": "geografia/evidencia_transito.json",
+      "bytes": 2298,
+      "sha256": "444daab2ead23e6f42e03f3c5ca1658bad79a6759a2d525cafcbbcdd3b52fbc2",
+      "igual_al_paquete": false,
+      "origen": "metadatos de la capa de evidencia de tránsito"
+    },
+    {
+      "path": "hexmap.js",
+      "bytes": 53803,
+      "sha256": "2542117ff761e7ebf4ddfd97a1be1e1e7f82a1f4242c34fd98a4e797192fc1c1",
+      "igual_al_paquete": false,
+      "origen": "módulo del mapa hexagonal (malla, modos, filtros, fichas, capas y tabla)"
+    },
+    {
+      "path": "geografia/hexbin_muertes.geojson",
+      "bytes": 243095,
+      "sha256": "1e69384434858cbefe9a6bcc16039e1d3d778878ea90b4bd5cbfd3aa69337787",
+      "igual_al_paquete": false,
+      "origen": "malla hexagonal con agregados MMP por celda"
+    },
+    {
+      "path": "geografia/hexbin_muertes.json",
+      "bytes": 4511,
+      "sha256": "1ebd188ef0436eb6180851eaba4c0401a8c1e9fb19ad9eee21ebf0926645b1d2",
+      "igual_al_paquete": false,
+      "origen": "metadatos y totales de la malla hexagonal"
+    },
+    {
+      "path": "geografia/estados_mexico.geojson",
+      "bytes": 136781,
+      "sha256": "e40633190cee1fd3ffa703fea4e85e13998a3cadb0d93d35fbfac6b7d011ab9e",
+      "igual_al_paquete": false,
+      "origen": "límites estatales de México (Natural Earth admin-1)"
+    },
+    {
+      "path": "geografia/paises_hex.geojson",
+      "bytes": 115819,
+      "sha256": "daafd79ce939582f9fad278fe80ee95a02daaf76aa66681e958a03e807c246a9",
+      "igual_al_paquete": false,
+      "origen": "países del encuadre para la base hexagonal (Natural Earth 50m)"
+    }
+  ]
+}

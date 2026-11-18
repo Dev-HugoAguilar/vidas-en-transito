@@ -1,0 +1,5744 @@
+{
+  "generated_at": "2026-11-12T15:12:00-06:00",
+  "prototype_status": "local_dashboard_v0.34; extended source charts; REDODEM attention detail; route geometry and service verification pending",
+  "warning": "Los conteos por año son filas fuente agrupadas por el campo de fecha de cada fuente; no son conteos de muertes ocurridas en ese año ni personas únicas. Las visualizaciones nuevas mantienen separados los universos UPMRIP, ICIJ/CLIP y OIM DTM; no son conteos equivalentes ni personas únicas.",
+  "sources": [
+    {
+      "source_id": "iom_mmp",
+      "record_label": "registros de fuente; no personas únicas",
+      "total_source_rows": 23826,
+      "rows_with_date": 23826,
+      "rows_without_or_invalid_date": 0,
+      "invalid_nonblank_dates": 0,
+      "date_field": "reported_date",
+      "date_semantics": "fecha reportada por MMP",
+      "records_by_year": {
+        "2014": 541,
+        "2015": 1066,
+        "2016": 1531,
+        "2017": 1502,
+        "2018": 1693,
+        "2019": 1843,
+        "2020": 1381,
+        "2021": 1998,
+        "2022": 2386,
+        "2023": 2812,
+        "2024": 3038,
+        "2025": 2462,
+        "2026": 1573
+      },
+      "records_by_month": {
+        "2014-01": 31,
+        "2014-02": 38,
+        "2014-03": 36,
+        "2014-04": 43,
+        "2014-05": 44,
+        "2014-06": 67,
+        "2014-07": 65,
+        "2014-08": 57,
+        "2014-09": 45,
+        "2014-10": 49,
+        "2014-11": 29,
+        "2014-12": 37,
+        "2015-01": 61,
+        "2015-02": 35,
+        "2015-03": 48,
+        "2015-04": 49,
+        "2015-05": 60,
+        "2015-06": 83,
+        "2015-07": 79,
+        "2015-08": 119,
+        "2015-09": 127,
+        "2015-10": 155,
+        "2015-11": 99,
+        "2015-12": 151,
+        "2016-01": 127,
+        "2016-02": 128,
+        "2016-03": 132,
+        "2016-04": 95,
+        "2016-05": 108,
+        "2016-06": 131,
+        "2016-07": 152,
+        "2016-08": 138,
+        "2016-09": 115,
+        "2016-10": 146,
+        "2016-11": 120,
+        "2016-12": 139,
+        "2017-01": 141,
+        "2017-02": 105,
+        "2017-03": 69,
+        "2017-04": 74,
+        "2017-05": 129,
+        "2017-06": 164,
+        "2017-07": 120,
+        "2017-08": 140,
+        "2017-09": 167,
+        "2017-10": 127,
+        "2017-11": 129,
+        "2017-12": 137,
+        "2018-01": 124,
+        "2018-02": 126,
+        "2018-03": 140,
+        "2018-04": 126,
+        "2018-05": 134,
+        "2018-06": 185,
+        "2018-07": 162,
+        "2018-08": 152,
+        "2018-09": 163,
+        "2018-10": 165,
+        "2018-11": 114,
+        "2018-12": 102,
+        "2019-01": 129,
+        "2019-02": 118,
+        "2019-03": 147,
+        "2019-04": 160,
+        "2019-05": 156,
+        "2019-06": 167,
+        "2019-07": 186,
+        "2019-08": 150,
+        "2019-09": 162,
+        "2019-10": 162,
+        "2019-11": 160,
+        "2019-12": 146,
+        "2020-01": 157,
+        "2020-02": 91,
+        "2020-03": 68,
+        "2020-04": 64,
+        "2020-05": 57,
+        "2020-06": 99,
+        "2020-07": 128,
+        "2020-08": 145,
+        "2020-09": 183,
+        "2020-10": 166,
+        "2020-11": 127,
+        "2020-12": 96,
+        "2021-01": 113,
+        "2021-02": 144,
+        "2021-03": 160,
+        "2021-04": 163,
+        "2021-05": 122,
+        "2021-06": 213,
+        "2021-07": 177,
+        "2021-08": 203,
+        "2021-09": 180,
+        "2021-10": 174,
+        "2021-11": 173,
+        "2021-12": 176,
+        "2022-01": 185,
+        "2022-02": 156,
+        "2022-03": 169,
+        "2022-04": 188,
+        "2022-05": 220,
+        "2022-06": 252,
+        "2022-07": 220,
+        "2022-08": 229,
+        "2022-09": 213,
+        "2022-10": 196,
+        "2022-11": 212,
+        "2022-12": 146,
+        "2023-01": 203,
+        "2023-02": 220,
+        "2023-03": 238,
+        "2023-04": 152,
+        "2023-05": 161,
+        "2023-06": 187,
+        "2023-07": 313,
+        "2023-08": 324,
+        "2023-09": 255,
+        "2023-10": 273,
+        "2023-11": 267,
+        "2023-12": 219,
+        "2024-01": 273,
+        "2024-02": 298,
+        "2024-03": 259,
+        "2024-04": 236,
+        "2024-05": 249,
+        "2024-06": 247,
+        "2024-07": 275,
+        "2024-08": 210,
+        "2024-09": 231,
+        "2024-10": 254,
+        "2024-11": 250,
+        "2024-12": 256,
+        "2025-01": 207,
+        "2025-02": 199,
+        "2025-03": 172,
+        "2025-04": 217,
+        "2025-05": 251,
+        "2025-06": 237,
+        "2025-07": 205,
+        "2025-08": 187,
+        "2025-09": 173,
+        "2025-10": 249,
+        "2025-11": 208,
+        "2025-12": 157,
+        "2026-01": 159,
+        "2026-02": 189,
+        "2026-03": 169,
+        "2026-04": 203,
+        "2026-05": 237,
+        "2026-06": 277,
+        "2026-07": 106,
+        "2026-08": 118,
+        "2026-09": 68,
+        "2026-10": 43,
+        "2026-11": 4
+      },
+      "rows_with_valid_coordinates": 23824,
+      "project_route_scope": {
+        "filter_field": "migration_route",
+        "included_route_labels": [
+          "US-Mexico border crossing",
+          "Darien",
+          "Caribbean to US",
+          "Caribbean to Central America",
+          "Haiti to Dominican Republic",
+          "Venezuela to Caribbean"
+        ],
+        "record_rows": 6146,
+        "rows_with_date": 6146,
+        "rows_by_month": {
+          "2014-01": 28,
+          "2014-02": 32,
+          "2014-03": 25,
+          "2014-04": 32,
+          "2014-05": 32,
+          "2014-06": 52,
+          "2014-07": 42,
+          "2014-08": 42,
+          "2014-09": 33,
+          "2014-10": 29,
+          "2014-11": 21,
+          "2014-12": 25,
+          "2015-01": 35,
+          "2015-02": 26,
+          "2015-03": 25,
+          "2015-04": 18,
+          "2015-05": 28,
+          "2015-06": 54,
+          "2015-07": 36,
+          "2015-08": 63,
+          "2015-09": 43,
+          "2015-10": 33,
+          "2015-11": 33,
+          "2015-12": 29,
+          "2016-01": 26,
+          "2016-02": 28,
+          "2016-03": 34,
+          "2016-04": 36,
+          "2016-05": 35,
+          "2016-06": 58,
+          "2016-07": 79,
+          "2016-08": 75,
+          "2016-09": 64,
+          "2016-10": 48,
+          "2016-11": 34,
+          "2016-12": 40,
+          "2017-01": 59,
+          "2017-02": 45,
+          "2017-03": 20,
+          "2017-04": 26,
+          "2017-05": 50,
+          "2017-06": 58,
+          "2017-07": 48,
+          "2017-08": 53,
+          "2017-09": 43,
+          "2017-10": 17,
+          "2017-11": 23,
+          "2017-12": 29,
+          "2018-01": 25,
+          "2018-02": 28,
+          "2018-03": 30,
+          "2018-04": 23,
+          "2018-05": 33,
+          "2018-06": 60,
+          "2018-07": 40,
+          "2018-08": 42,
+          "2018-09": 32,
+          "2018-10": 27,
+          "2018-11": 27,
+          "2018-12": 33,
+          "2019-01": 32,
+          "2019-02": 25,
+          "2019-03": 13,
+          "2019-04": 40,
+          "2019-05": 34,
+          "2019-06": 53,
+          "2019-07": 61,
+          "2019-08": 45,
+          "2019-09": 39,
+          "2019-10": 28,
+          "2019-11": 16,
+          "2019-12": 20,
+          "2020-01": 37,
+          "2020-02": 37,
+          "2020-03": 37,
+          "2020-04": 25,
+          "2020-05": 24,
+          "2020-06": 42,
+          "2020-07": 60,
+          "2020-08": 55,
+          "2020-09": 64,
+          "2020-10": 45,
+          "2020-11": 29,
+          "2020-12": 30,
+          "2021-01": 44,
+          "2021-02": 37,
+          "2021-03": 49,
+          "2021-04": 62,
+          "2021-05": 44,
+          "2021-06": 95,
+          "2021-07": 60,
+          "2021-08": 68,
+          "2021-09": 68,
+          "2021-10": 35,
+          "2021-11": 46,
+          "2021-12": 25,
+          "2022-01": 36,
+          "2022-02": 36,
+          "2022-03": 66,
+          "2022-04": 63,
+          "2022-05": 71,
+          "2022-06": 98,
+          "2022-07": 94,
+          "2022-08": 74,
+          "2022-09": 63,
+          "2022-10": 41,
+          "2022-11": 47,
+          "2022-12": 41,
+          "2023-01": 45,
+          "2023-02": 48,
+          "2023-03": 48,
+          "2023-04": 41,
+          "2023-05": 56,
+          "2023-06": 60,
+          "2023-07": 107,
+          "2023-08": 92,
+          "2023-09": 64,
+          "2023-10": 47,
+          "2023-11": 54,
+          "2023-12": 22,
+          "2024-01": 92,
+          "2024-02": 108,
+          "2024-03": 36,
+          "2024-04": 22,
+          "2024-05": 36,
+          "2024-06": 86,
+          "2024-07": 92,
+          "2024-08": 50,
+          "2024-09": 45,
+          "2024-10": 37,
+          "2024-11": 21,
+          "2024-12": 21,
+          "2025-01": 16,
+          "2025-02": 15,
+          "2025-03": 13,
+          "2025-04": 13,
+          "2025-05": 12,
+          "2025-06": 19,
+          "2025-07": 16,
+          "2025-08": 23,
+          "2025-09": 15,
+          "2025-10": 13,
+          "2025-11": 14,
+          "2025-12": 6,
+          "2026-01": 17,
+          "2026-02": 10,
+          "2026-03": 10,
+          "2026-04": 15,
+          "2026-05": 12,
+          "2026-06": 21,
+          "2026-07": 23,
+          "2026-08": 16,
+          "2026-09": 10,
+          "2026-10": 9
+        },
+        "rows_by_route_label": {
+          "US-Mexico border crossing": 5751,
+          "Caribbean to US": 85,
+          "Haiti to Dominican Republic": 20,
+          "Venezuela to Caribbean": 15,
+          "Darien": 267,
+          "Caribbean to Central America": 8
+        },
+        "incident_record_rows_by_cause": {
+          "Harsh environmental conditions / lack of adequate shelter, food, water": 1489,
+          "Mixed or unknown": 2349,
+          "Drowning": 1565,
+          "Vehicle accident / death linked to hazardous transport": 272,
+          "Violence": 202,
+          "Accidental death": 141,
+          "Sickness / lack of access to adequate healthcare": 128
+        },
+        "distinct_nonblank_web_id": 6048,
+        "repeated_web_id_excess_rows": 98,
+        "warning": "Selected route labels only; not all MMP records in Latin America and not a complete corridor census. Counts are source rows; repeated web_id values are retained and persons are not deduplicated."
+      }
+    },
+    {
+      "source_id": "el_paso_migrant_death_database",
+      "record_label": "registros de fuente; no personas únicas",
+      "total_source_rows": 793,
+      "rows_with_date": 774,
+      "rows_without_or_invalid_date": 19,
+      "invalid_nonblank_dates": 0,
+      "date_field": "Pronouncement Date",
+      "date_semantics": "fecha de pronunciamiento; no necesariamente fecha de muerte",
+      "records_by_year": {
+        "2005": 1,
+        "2008": 1,
+        "2009": 2,
+        "2010": 1,
+        "2011": 5,
+        "2012": 3,
+        "2013": 8,
+        "2014": 4,
+        "2015": 4,
+        "2016": 12,
+        "2017": 14,
+        "2018": 17,
+        "2019": 43,
+        "2020": 46,
+        "2021": 77,
+        "2022": 112,
+        "2023": 166,
+        "2024": 193,
+        "2025": 41,
+        "2026": 24
+      },
+      "records_by_month": {
+        "2005-08": 1,
+        "2008-10": 1,
+        "2009-09": 1,
+        "2009-10": 1,
+        "2010-01": 1,
+        "2011-08": 1,
+        "2011-09": 1,
+        "2011-10": 2,
+        "2011-11": 1,
+        "2012-01": 1,
+        "2012-05": 1,
+        "2012-09": 1,
+        "2013-03": 3,
+        "2013-04": 1,
+        "2013-05": 1,
+        "2013-06": 1,
+        "2013-07": 2,
+        "2014-02": 2,
+        "2014-06": 1,
+        "2014-11": 1,
+        "2015-05": 1,
+        "2015-06": 1,
+        "2015-07": 1,
+        "2015-08": 1,
+        "2016-04": 2,
+        "2016-05": 1,
+        "2016-06": 4,
+        "2016-07": 2,
+        "2016-08": 1,
+        "2016-09": 1,
+        "2016-10": 1,
+        "2017-02": 1,
+        "2017-06": 3,
+        "2017-07": 5,
+        "2017-08": 2,
+        "2017-09": 1,
+        "2017-12": 2,
+        "2018-01": 2,
+        "2018-02": 1,
+        "2018-03": 1,
+        "2018-07": 3,
+        "2018-08": 5,
+        "2018-09": 1,
+        "2018-11": 1,
+        "2018-12": 3,
+        "2019-01": 1,
+        "2019-03": 1,
+        "2019-04": 3,
+        "2019-05": 4,
+        "2019-06": 12,
+        "2019-07": 8,
+        "2019-08": 6,
+        "2019-09": 4,
+        "2019-10": 1,
+        "2019-11": 1,
+        "2019-12": 2,
+        "2020-01": 1,
+        "2020-02": 1,
+        "2020-03": 5,
+        "2020-05": 1,
+        "2020-06": 10,
+        "2020-07": 7,
+        "2020-08": 8,
+        "2020-09": 5,
+        "2020-10": 3,
+        "2020-11": 2,
+        "2020-12": 3,
+        "2021-02": 4,
+        "2021-03": 2,
+        "2021-04": 3,
+        "2021-05": 3,
+        "2021-06": 19,
+        "2021-07": 10,
+        "2021-08": 13,
+        "2021-09": 9,
+        "2021-10": 3,
+        "2021-11": 7,
+        "2021-12": 4,
+        "2022-01": 4,
+        "2022-03": 6,
+        "2022-04": 7,
+        "2022-05": 4,
+        "2022-06": 32,
+        "2022-07": 24,
+        "2022-08": 7,
+        "2022-09": 6,
+        "2022-10": 12,
+        "2022-11": 7,
+        "2022-12": 3,
+        "2023-01": 6,
+        "2023-02": 4,
+        "2023-03": 2,
+        "2023-04": 7,
+        "2023-05": 16,
+        "2023-06": 28,
+        "2023-07": 41,
+        "2023-08": 27,
+        "2023-09": 14,
+        "2023-10": 9,
+        "2023-11": 10,
+        "2023-12": 2,
+        "2024-01": 4,
+        "2024-02": 5,
+        "2024-03": 17,
+        "2024-04": 10,
+        "2024-05": 12,
+        "2024-06": 45,
+        "2024-07": 37,
+        "2024-08": 24,
+        "2024-09": 9,
+        "2024-10": 18,
+        "2024-11": 7,
+        "2024-12": 5,
+        "2025-01": 4,
+        "2025-02": 3,
+        "2025-04": 4,
+        "2025-05": 4,
+        "2025-06": 3,
+        "2025-07": 9,
+        "2025-08": 1,
+        "2025-09": 3,
+        "2025-10": 3,
+        "2025-11": 4,
+        "2025-12": 3,
+        "2026-01": 2,
+        "2026-02": 7,
+        "2026-03": 2,
+        "2026-04": 1,
+        "2026-05": 3,
+        "2026-06": 6,
+        "2026-07": 2,
+        "2026-08": 1
+      },
+      "rows_with_valid_coordinates": 768
+    }
+  ],
+  "redodem": {
+    "source_id": "redodem_protection_monitoring",
+    "record_label": "registros de monitoreo/atención; no personas únicas ni rutas",
+    "total_source_rows": 40800,
+    "year_month": {
+      "2023": {
+        "total": 22123,
+        "months": {}
+      },
+      "2024": {
+        "total": 18677,
+        "months": {}
+      }
+    },
+    "field_summaries": {
+      "genero": {
+        "total_rows": 40800,
+        "literal_na": 0,
+        "not_specified": 611,
+        "blank": 0,
+        "categories": {
+          "Mujer": 14787,
+          "Hombre": 25339,
+          "No especificado": 611,
+          "Persona no binaria": 63
+        }
+      },
+      "grupo_etario": {
+        "total_rows": 40800,
+        "literal_na": 0,
+        "not_specified": 330,
+        "blank": 0,
+        "categories": {
+          "Adolescentes": 2768,
+          "Adultos": 15666,
+          "Adultos jóvenes": 14722,
+          "Niñxs": 6768,
+          "No especificado": 330,
+          "Adultos mayores": 546
+        }
+      },
+      "region_albergues": {
+        "total_rows": 40800,
+        "literal_na": 0,
+        "not_specified": 330,
+        "blank": 0,
+        "categories": {
+          "Sur": 11643,
+          "Occidente-Bajío": 7411,
+          "Norte": 8754,
+          "Centro": 12662,
+          "No especificado": 330
+        }
+      },
+      "pais_de_nacimiento": {
+        "total_rows": 40800,
+        "literal_na": 0,
+        "not_specified": 307,
+        "blank": 0,
+        "categories": {
+          "Honduras": 12889,
+          "Ecuador": 2260,
+          "Venezuela": 10350,
+          "Perú": 636,
+          "México": 1113,
+          "Colombia": 2757,
+          "Haití": 1456,
+          "Guatemala": 3634,
+          "El Salvador": 2214,
+          "Cuba": 399,
+          "Nicaragua": 1122,
+          "No especificado": 307,
+          "Afganistán": 170,
+          "Chile": 239,
+          "Brasil": 331,
+          "Estados Unidos": 28,
+          "Senegal": 14,
+          "Burundi": 3,
+          "Nigeria": 16,
+          "Angola": 85,
+          "Rep. Dominicana": 110,
+          "Guinea Ecuatorial": 21,
+          "Jamaica": 9,
+          "Italia": 3,
+          "China": 58,
+          "Costa Rica": 39,
+          "Egipto": 13,
+          "Somalia": 5,
+          "Argentina": 40,
+          "Guinea": 29,
+          "Panamá": 132,
+          "Ghana": 10,
+          "Mauritania": 9,
+          "Costa De Marfil": 1,
+          "Marruecos": 24,
+          "Ucrania": 3,
+          "Belice": 24,
+          "Siria": 3,
+          "Jordania": 5,
+          "Bangladesh": 1,
+          "Kenia": 1,
+          "Francia": 5,
+          "Guyana": 5,
+          "Rusia": 17,
+          "Rep. Centroafricana": 7,
+          "Laos": 3,
+          "Vanuatu": 2,
+          "Guinea-Bissau": 3,
+          "Libia": 3,
+          "Congo": 21,
+          "Uganda": 2,
+          "Liberia": 1,
+          "Camerún": 9,
+          "Bolivia": 38,
+          "Argelia": 3,
+          "Eritrea": 2,
+          "Armenia": 3,
+          "India": 11,
+          "Turquía": 2,
+          "Antillas Neerlandesas": 2,
+          "Sudán": 5,
+          "Benín": 2,
+          "Guayana Francesa": 6,
+          "Cabo Verde": 1,
+          "Irán": 9,
+          "España": 3,
+          "Canadá": 4,
+          "Uruguay": 4,
+          "Vietnam": 1,
+          "Togo": 6,
+          "Iraq": 2,
+          "Lesotho": 1,
+          "Etiopía": 4,
+          "Burkina Faso": 1,
+          "Australia": 1,
+          "Mayotte": 1,
+          "Arabia Saudita": 1,
+          "Yemen": 1,
+          "Sudáfrica": 2,
+          "Rep. Democrática del Congo": 15,
+          "Paraguay": 1,
+          "Polinesia Francesa": 1,
+          "Mali": 1,
+          "Pakistán": 4,
+          "Tanzania": 3,
+          "Chipre": 1,
+          "Papúa Nueva Guinea": 1,
+          "Grecia": 1,
+          "Eslovenia": 1,
+          "Hong Kong": 1,
+          "Níger": 2,
+          "Macao": 2,
+          "Rep. Eslovaca": 1,
+          "Dominica": 1,
+          "Uzbekistán": 2,
+          "Micronesia": 1,
+          "Namibia": 1,
+          "Albania": 1,
+          "Alemania": 1,
+          "Trinidad y Tobago": 1
+        }
+      },
+      "pais_destino": {
+        "total_rows": 40800,
+        "literal_na": 34741,
+        "not_specified": 0,
+        "blank": 0,
+        "categories": {
+          "NA": 34741,
+          "Estados Unidos": 4959,
+          "México": 890,
+          "Guatemala": 31,
+          "El Salvador": 14,
+          "Honduras": 46,
+          "Colombia": 18,
+          "Canadá": 26,
+          "Ecuador": 6,
+          "España": 6,
+          "Venezuela": 19,
+          "Estonia": 3,
+          "Emiratos Arabes Unidos": 8,
+          "Nicaragua": 4,
+          "Afganistán": 1,
+          "Nueva Zelanda": 5,
+          "Mayotte": 3,
+          "Brasil": 8,
+          "Armenia": 3,
+          "Chile": 2,
+          "Estados Unidos|Guatemala": 1,
+          "Tailandia": 1,
+          "Estados Unidos|México": 4,
+          "Cuba": 1
+        }
+      },
+      "motivos_generales": {
+        "total_rows": 40800,
+        "literal_na": 34462,
+        "not_specified": 0,
+        "blank": 0,
+        "categories": {
+          "NA": 34462,
+          "De violencias": 2049,
+          "Socioeconómicos": 2720,
+          "De violencias|Socioeconómicos": 1103,
+          "Personales|Socioeconómicos": 148,
+          "Ambientales|De violencias": 29,
+          "De violencias|Personales": 51,
+          "Personales": 131,
+          "De violencias|Personales|Socioeconómicos": 69,
+          "Ambientales": 10,
+          "Ambientales|Socioeconómicos": 3,
+          "Ambientales|De violencias|Socioeconómicos": 19,
+          "Ambientales|De violencias|Personales": 1,
+          "Ambientales|De violencias|Personales|Socioeconómicos": 4,
+          "Ambientales|Personales": 1
+        }
+      },
+      "violencias": {
+        "total_rows": 40800,
+        "literal_na": 40301,
+        "not_specified": 0,
+        "blank": 0,
+        "categories": {
+          "NA": 40301,
+          "Agresión física o verbal": 28,
+          "Amenazas|Robo o asalto": 3,
+          "Robo o asalto": 150,
+          "Extorsión": 103,
+          "Amenazas": 4,
+          "Agresión física o verbal|Robo o asalto": 18,
+          "Extorsión|Otros": 2,
+          "Agresión física o verbal|Intento de homicidio o secuestro|Otros": 2,
+          "Extorsión|Robo o asalto": 15,
+          "Amenazas|Discriminación|Otros": 3,
+          "Intento de homicidio o secuestro": 11,
+          "Otros": 23,
+          "Agresión física o verbal|Amenazas|Robo o asalto": 6,
+          "Agresión física o verbal|Extorsión|Robo o asalto": 5,
+          "Agresión física o verbal|Robo o asalto|Violencia sexual": 1,
+          "Agresión física o verbal|Amenazas|Extorsión": 5,
+          "Agresión física o verbal|Destrucción de documentos de identidad y migratorios|Discriminación": 1,
+          "Agresión física o verbal|Discriminación|Tortura psicológica o psicoemocional": 1,
+          "Discriminación|Extorsión": 2,
+          "Agresión física o verbal|Otros": 6,
+          "Agresión física o verbal|Amenazas": 2,
+          "Agresión física o verbal|Destrucción de documentos de identidad y migratorios": 1,
+          "Agresión física o verbal|Amenazas|Discriminación|Robo o asalto|Tortura psicológica o psicoemocional": 2,
+          "Otros|Robo o asalto": 5,
+          "Agresión física o verbal|Amenazas|Extorsión|Intento de homicidio o secuestro|Otros": 1,
+          "Agresión física o verbal|Intento de homicidio o secuestro": 2,
+          "Agresión física o verbal|Amenazas|Desplazamiento forzado|Intento de homicidio o secuestro": 1,
+          "Violencia sexual": 3,
+          "Agresión física o verbal|Otros|Tortura psicológica o psicoemocional": 2,
+          "Agresión física o verbal|Intento de homicidio o secuestro|Robo o asalto|Tortura psicológica o psicoemocional": 1,
+          "Intrusión violenta a su vivienda|Violencia sexual": 3,
+          "Secuestro": 37,
+          "Agresión física o verbal|Violencia sexual": 1,
+          "Otros|Secuestro|Violencia sexual": 1,
+          "Robo o asalto|Violencia sexual": 1,
+          "Secuestro|Tortura psicológica o psicoemocional": 2,
+          "Secuestro|Violencia sexual": 2,
+          "Agresión física o verbal|Secuestro|Separación familiar": 2,
+          "Agresión física o verbal|Extorsión|Secuestro|Tortura psicológica o psicoemocional": 3,
+          "Amenazas|Extorsión|Robo o asalto|Secuestro": 4,
+          "Robo o asalto|Secuestro|Violencia sexual": 1,
+          "Agresión física o verbal|Amenazas|Extorsión|Secuestro|Separación familiar": 2,
+          "Agresión física o verbal|Otros|Tortura psicológica o psicoemocional|Violencia sexual": 3,
+          "Robo o asalto|Secuestro": 7,
+          "Destrucción de documentos de identidad y migratorios": 2,
+          "Extorsión|Secuestro": 1,
+          "Agresión física o verbal|Amenazas|Extorsión|Robo o asalto|Secuestro|Tortura psicológica o psicoemocional": 2,
+          "Agresión física o verbal|Secuestro|Tortura psicológica o psicoemocional": 1,
+          "Desplazamiento forzado": 4,
+          "Agresión física o verbal|Amenazas|Desplazamiento forzado|Robo o asalto|Secuestro|Tortura psicológica o psicoemocional": 3,
+          "Agresión física o verbal|Amenazas|Extorsión|Intento de homicidio o secuestro|Robo o asalto|Secuestro": 2,
+          "Intento de homicidio o secuestro|Robo o asalto": 2,
+          "Extorsión|Violencia sexual": 1,
+          "Discriminación|Extorsión|Intento de homicidio o secuestro|Secuestro": 3
+        }
+      },
+      "tipos_perpetradores": {
+        "total_rows": 40800,
+        "literal_na": 40331,
+        "not_specified": 3,
+        "blank": 0,
+        "categories": {
+          "NA": 40331,
+          "Autoridades migratorias|Autoridades policiales": 30,
+          "Miembro de pandilla": 9,
+          "Crimen organizado": 91,
+          "Autoridades policiales": 51,
+          "Delincuencia común": 45,
+          "Autoridades migratorias": 60,
+          "Autoridades migratorias|Particulares": 8,
+          "Autoridades migratorias|Crimen organizado": 3,
+          "Autoridades migratorias|Delincuencia común|Particulares": 1,
+          "Autoridades otras|Delincuencia común": 1,
+          "Particulares": 74,
+          "Crimen organizado|Particulares": 8,
+          "Autoridades otras": 17,
+          "Delincuencia común|Particulares": 9,
+          "Autoridades policiales|Particulares": 4,
+          "Autoridades militares|Autoridades policiales": 1,
+          "Autoridades policiales|Delincuencia común": 5,
+          "Crimen organizado|Delincuencia común": 11,
+          "Autoridades migratorias|Autoridades otras": 1,
+          "No especificado": 3,
+          "Autoridades otras|Autoridades policiales": 5,
+          "Autoridades migratorias|Delincuencia común": 2,
+          "Autoridades otras|Crimen organizado": 1,
+          "Autoridades policiales|Crimen organizado|Delincuencia común": 4,
+          "Delincuencia común|Miembro de pandilla": 2,
+          "Autoridades policiales|No especificado": 2,
+          "Autoridades militares": 2,
+          "Crimen organizado|No especificado": 2,
+          "Autoridades policiales|Crimen organizado": 3,
+          "Autoridades militares|Crimen organizado|Delincuencia común": 1,
+          "Autoridades militares|Particulares": 1,
+          "Autoridades policiales|Crimen organizado|Particulares": 1,
+          "Coyote|Crimen organizado": 1,
+          "Coyote|Particulares": 4,
+          "Autoridades migratorias|Autoridades militares": 4,
+          "Autoridades policiales|Crimen organizado|Delincuencia común|Particulares": 2
+        }
+      }
+    },
+    "age_gender_matrix": {
+      "Adolescentes": {
+        "Mujer": 1134,
+        "Hombre": 1594,
+        "No especificado": 39,
+        "Persona no binaria": 1
+      },
+      "Adultos": {
+        "Mujer": 5172,
+        "Hombre": 10275,
+        "No especificado": 199,
+        "Persona no binaria": 20
+      },
+      "Adultos jóvenes": {
+        "Mujer": 5034,
+        "Hombre": 9433,
+        "No especificado": 214,
+        "Persona no binaria": 41
+      },
+      "Niñxs": {
+        "No especificado": 138,
+        "Hombre": 3436,
+        "Mujer": 3193,
+        "Persona no binaria": 1
+      },
+      "No especificado": {
+        "Hombre": 199,
+        "Mujer": 113,
+        "No especificado": 18
+      },
+      "Adultos mayores": {
+        "Mujer": 141,
+        "Hombre": 402,
+        "No especificado": 3
+      }
+    },
+    "violence_field_by_year": {
+      "2023": {
+        "total": 22123,
+        "literal_na": 21806,
+        "non_na_value": 317
+      },
+      "2024": {
+        "total": 18677,
+        "literal_na": 18495,
+        "non_na_value": 182
+      }
+    },
+    "departure_reason_mentions": {
+      "records_with_value": 6338,
+      "mentions": {
+        "De violencias": 3325,
+        "Socioeconómicos": 4066,
+        "Personales": 405,
+        "Ambientales": 67
+      }
+    },
+    "violence_mentions": {
+      "records_with_value": 499,
+      "mentions": {
+        "Agresión física o verbal": 104,
+        "Amenazas": 40,
+        "Robo o asalto": 228,
+        "Extorsión": 151,
+        "Otros": 48,
+        "Intento de homicidio o secuestro": 25,
+        "Discriminación": 12,
+        "Violencia sexual": 17,
+        "Destrucción de documentos de identidad y migratorios": 4,
+        "Tortura psicológica o psicoemocional": 20,
+        "Desplazamiento forzado": 8,
+        "Intrusión violenta a su vivienda": 3,
+        "Secuestro": 73,
+        "Separación familiar": 4
+      }
+    },
+    "perpetrator_mentions": {
+      "records_with_value": 469,
+      "mentions": {
+        "Autoridades migratorias": 109,
+        "Autoridades policiales": 108,
+        "Miembro de pandilla": 11,
+        "Crimen organizado": 128,
+        "Delincuencia común": 83,
+        "Particulares": 112,
+        "Autoridades otras": 25,
+        "Autoridades militares": 9,
+        "No especificado": 7,
+        "Coyote": 5
+      }
+    },
+    "interpretation": "Observaciones de organizaciones participantes. No representan prevalencia, población migrante total, trayectorias, muertes ni personas únicas. Las multirrespuestas se cuentan como menciones y pueden solaparse.",
+    "redistribution_status": "aggregate_only_local_prototype_permission_pending",
+    "cross_tabs": {
+      "pais_de_nacimiento": {
+        "grupo_etario": {
+          "Honduras": {
+            "Niñxs": 1553,
+            "Adolescentes": 919,
+            "Adultos jóvenes": 5365,
+            "Adultos": 4730,
+            "Adultos mayores": 182,
+            "No especificado": 140
+          },
+          "Venezuela": {
+            "Niñxs": 1719,
+            "Adolescentes": 920,
+            "Adultos jóvenes": 3697,
+            "Adultos": 3814,
+            "Adultos mayores": 125,
+            "No especificado": 75
+          },
+          "Guatemala": {
+            "Niñxs": 493,
+            "Adolescentes": 250,
+            "Adultos jóvenes": 1412,
+            "Adultos": 1398,
+            "Adultos mayores": 48,
+            "No especificado": 33
+          },
+          "Colombia": {
+            "Niñxs": 775,
+            "Adolescentes": 137,
+            "Adultos jóvenes": 878,
+            "Adultos": 934,
+            "Adultos mayores": 26,
+            "No especificado": 7
+          },
+          "Ecuador": {
+            "Niñxs": 523,
+            "Adolescentes": 184,
+            "Adultos jóvenes": 661,
+            "Adultos": 869,
+            "Adultos mayores": 10,
+            "No especificado": 13
+          },
+          "El Salvador": {
+            "Niñxs": 252,
+            "Adolescentes": 92,
+            "Adultos jóvenes": 816,
+            "Adultos": 1008,
+            "Adultos mayores": 39,
+            "No especificado": 7
+          },
+          "Haití": {
+            "Niñxs": 135,
+            "Adolescentes": 65,
+            "Adultos jóvenes": 468,
+            "Adultos": 764,
+            "Adultos mayores": 13,
+            "No especificado": 11
+          },
+          "Nicaragua": {
+            "Niñxs": 103,
+            "Adolescentes": 35,
+            "Adultos jóvenes": 427,
+            "Adultos": 536,
+            "Adultos mayores": 18,
+            "No especificado": 3
+          },
+          "México": {
+            "Niñxs": 211,
+            "Adolescentes": 26,
+            "Adultos jóvenes": 258,
+            "Adultos": 545,
+            "Adultos mayores": 67,
+            "No especificado": 6
+          },
+          "Perú": {
+            "Niñxs": 289,
+            "Adolescentes": 16,
+            "Adultos jóvenes": 153,
+            "Adultos": 173,
+            "Adultos mayores": 3,
+            "No especificado": 2
+          },
+          "Cuba": {
+            "Niñxs": 45,
+            "Adolescentes": 22,
+            "Adultos jóvenes": 111,
+            "Adultos": 211,
+            "Adultos mayores": 7,
+            "No especificado": 3
+          },
+          "Brasil": {
+            "Niñxs": 173,
+            "Adolescentes": 7,
+            "Adultos jóvenes": 60,
+            "Adultos": 89,
+            "Adultos mayores": 1,
+            "No especificado": 1
+          },
+          "No especificado": {
+            "Niñxs": 63,
+            "Adolescentes": 17,
+            "Adultos jóvenes": 93,
+            "Adultos": 109,
+            "Adultos mayores": 3,
+            "No especificado": 22
+          },
+          "Chile": {
+            "Niñxs": 222,
+            "Adultos jóvenes": 4,
+            "Adultos": 12,
+            "No especificado": 1
+          },
+          "Afganistán": {
+            "Niñxs": 26,
+            "Adolescentes": 18,
+            "Adultos jóvenes": 65,
+            "Adultos": 59,
+            "No especificado": 2
+          },
+          "Panamá": {
+            "Niñxs": 44,
+            "Adolescentes": 13,
+            "Adultos jóvenes": 37,
+            "Adultos": 37,
+            "Adultos mayores": 1
+          },
+          "Rep. Dominicana": {
+            "Niñxs": 13,
+            "Adolescentes": 4,
+            "Adultos jóvenes": 39,
+            "Adultos": 53,
+            "No especificado": 1
+          },
+          "Angola": {
+            "Niñxs": 21,
+            "Adolescentes": 11,
+            "Adultos jóvenes": 20,
+            "Adultos": 33
+          },
+          "China": {
+            "Niñxs": 10,
+            "Adolescentes": 3,
+            "Adultos jóvenes": 5,
+            "Adultos": 40
+          },
+          "Argentina": {
+            "Niñxs": 12,
+            "Adolescentes": 4,
+            "Adultos jóvenes": 8,
+            "Adultos": 16
+          },
+          "Costa Rica": {
+            "Niñxs": 15,
+            "Adultos jóvenes": 12,
+            "Adultos": 12
+          },
+          "Bolivia": {
+            "Niñxs": 6,
+            "Adolescentes": 1,
+            "Adultos jóvenes": 13,
+            "Adultos": 16,
+            "Adultos mayores": 1,
+            "No especificado": 1
+          },
+          "Guinea": {
+            "Niñxs": 2,
+            "Adolescentes": 4,
+            "Adultos jóvenes": 12,
+            "Adultos": 11
+          },
+          "Estados Unidos": {
+            "Niñxs": 10,
+            "Adolescentes": 2,
+            "Adultos jóvenes": 7,
+            "Adultos": 9
+          },
+          "Belice": {
+            "Niñxs": 7,
+            "Adultos jóvenes": 7,
+            "Adultos": 10
+          },
+          "Marruecos": {
+            "Niñxs": 1,
+            "Adultos jóvenes": 11,
+            "Adultos": 11,
+            "No especificado": 1
+          },
+          "Congo": {
+            "Niñxs": 1,
+            "Adultos jóvenes": 13,
+            "Adultos": 7
+          },
+          "Guinea Ecuatorial": {
+            "Niñxs": 1,
+            "Adultos jóvenes": 4,
+            "Adultos": 16
+          },
+          "Rusia": {
+            "Niñxs": 4,
+            "Adolescentes": 1,
+            "Adultos jóvenes": 2,
+            "Adultos": 9,
+            "Adultos mayores": 1
+          },
+          "Nigeria": {
+            "Niñxs": 2,
+            "Adultos jóvenes": 1,
+            "Adultos": 13
+          },
+          "Rep. Democrática del Congo": {
+            "Niñxs": 1,
+            "Adolescentes": 3,
+            "Adultos jóvenes": 6,
+            "Adultos": 5
+          },
+          "Senegal": {
+            "Niñxs": 2,
+            "Adultos jóvenes": 6,
+            "Adultos": 6
+          },
+          "Egipto": {
+            "Niñxs": 2,
+            "Adolescentes": 2,
+            "Adultos jóvenes": 4,
+            "Adultos": 4,
+            "No especificado": 1
+          },
+          "India": {
+            "Niñxs": 2,
+            "Adolescentes": 1,
+            "Adultos jóvenes": 4,
+            "Adultos": 4
+          },
+          "Ghana": {
+            "Adultos jóvenes": 2,
+            "Adultos": 8
+          },
+          "Camerún": {
+            "Adultos jóvenes": 2,
+            "Adultos": 7
+          },
+          "Irán": {
+            "Niñxs": 1,
+            "Adultos": 8
+          },
+          "Jamaica": {
+            "Niñxs": 2,
+            "Adultos jóvenes": 1,
+            "Adultos": 6
+          },
+          "Mauritania": {
+            "Adolescentes": 1,
+            "Adultos jóvenes": 5,
+            "Adultos": 3
+          },
+          "Rep. Centroafricana": {
+            "Adultos jóvenes": 1,
+            "Adultos": 6
+          },
+          "Guayana Francesa": {
+            "Niñxs": 6
+          },
+          "Togo": {
+            "Adultos jóvenes": 1,
+            "Adultos": 5
+          },
+          "Francia": {
+            "Niñxs": 3,
+            "Adultos": 2
+          },
+          "Guyana": {
+            "Niñxs": 5
+          },
+          "Jordania": {
+            "Niñxs": 1,
+            "Adultos jóvenes": 2,
+            "Adultos": 2
+          },
+          "Somalia": {
+            "Adolescentes": 4,
+            "Adultos jóvenes": 1
+          },
+          "Sudán": {
+            "Adultos jóvenes": 2,
+            "Adultos": 3
+          },
+          "Canadá": {
+            "Niñxs": 1,
+            "Adolescentes": 1,
+            "Adultos": 2
+          },
+          "Etiopía": {
+            "Adultos jóvenes": 1,
+            "Adultos": 3
+          },
+          "Pakistán": {
+            "Niñxs": 1,
+            "Adolescentes": 1,
+            "Adultos": 2
+          },
+          "Uruguay": {
+            "Niñxs": 1,
+            "Adultos": 3
+          },
+          "Argelia": {
+            "Adultos jóvenes": 2,
+            "Adultos": 1
+          },
+          "Armenia": {
+            "Niñxs": 1,
+            "Adultos jóvenes": 2
+          },
+          "Burundi": {
+            "Niñxs": 1,
+            "Adultos": 2
+          },
+          "España": {
+            "Niñxs": 1,
+            "Adultos jóvenes": 1,
+            "Adultos": 1
+          },
+          "Guinea-Bissau": {
+            "Adultos jóvenes": 1,
+            "Adultos": 2
+          },
+          "Italia": {
+            "Niñxs": 2,
+            "Adultos": 1
+          },
+          "Laos": {
+            "Adultos jóvenes": 2,
+            "Adultos": 1
+          },
+          "Libia": {
+            "Adultos": 3
+          },
+          "Siria": {
+            "Adultos jóvenes": 1,
+            "Adultos": 2
+          },
+          "Tanzania": {
+            "Adultos": 3
+          },
+          "Ucrania": {
+            "Adolescentes": 1,
+            "Adultos": 2
+          },
+          "Antillas Neerlandesas": {
+            "Adolescentes": 1,
+            "Adultos": 1
+          },
+          "Benín": {
+            "Adultos jóvenes": 1,
+            "Adultos": 1
+          },
+          "Eritrea": {
+            "Adultos": 2
+          },
+          "Iraq": {
+            "Adultos": 1,
+            "Adultos mayores": 1
+          },
+          "Macao": {
+            "Adultos jóvenes": 2
+          },
+          "Níger": {
+            "Adultos": 2
+          },
+          "Sudáfrica": {
+            "Adultos jóvenes": 1,
+            "Adultos": 1
+          },
+          "Turquía": {
+            "Adultos jóvenes": 1,
+            "Adultos": 1
+          },
+          "Uganda": {
+            "Niñxs": 1,
+            "Adultos": 1
+          },
+          "Uzbekistán": {
+            "Adultos": 2
+          },
+          "Vanuatu": {
+            "Adolescentes": 1,
+            "Adultos jóvenes": 1
+          },
+          "Albania": {
+            "Niñxs": 1
+          },
+          "Alemania": {
+            "Adultos": 1
+          },
+          "Arabia Saudita": {
+            "Adultos": 1
+          },
+          "Australia": {
+            "Adultos jóvenes": 1
+          },
+          "Bangladesh": {
+            "Adultos": 1
+          },
+          "Burkina Faso": {
+            "Adultos jóvenes": 1
+          },
+          "Cabo Verde": {
+            "Adultos jóvenes": 1
+          },
+          "Chipre": {
+            "Adultos": 1
+          },
+          "Costa De Marfil": {
+            "Adultos": 1
+          },
+          "Dominica": {
+            "Niñxs": 1
+          },
+          "Eslovenia": {
+            "Adultos jóvenes": 1
+          },
+          "Grecia": {
+            "Adultos": 1
+          },
+          "Hong Kong": {
+            "Adultos jóvenes": 1
+          },
+          "Kenia": {
+            "Adultos": 1
+          },
+          "Lesotho": {
+            "Adultos jóvenes": 1
+          },
+          "Liberia": {
+            "Adultos": 1
+          },
+          "Mali": {
+            "Adultos": 1
+          },
+          "Mayotte": {
+            "Adultos": 1
+          },
+          "Micronesia": {
+            "Adultos jóvenes": 1
+          },
+          "Namibia": {
+            "Adultos": 1
+          },
+          "Papúa Nueva Guinea": {
+            "Adultos jóvenes": 1
+          },
+          "Paraguay": {
+            "Adultos jóvenes": 1
+          },
+          "Polinesia Francesa": {
+            "Adultos jóvenes": 1
+          },
+          "Rep. Eslovaca": {
+            "Adolescentes": 1
+          },
+          "Trinidad y Tobago": {
+            "Niñxs": 1
+          },
+          "Vietnam": {
+            "Adultos": 1
+          },
+          "Yemen": {
+            "Adultos": 1
+          }
+        },
+        "genero": {
+          "Honduras": {
+            "Hombre": 9034,
+            "Mujer": 3654,
+            "Persona no binaria": 31,
+            "No especificado": 170
+          },
+          "Venezuela": {
+            "Hombre": 5527,
+            "Mujer": 4605,
+            "Persona no binaria": 12,
+            "No especificado": 206
+          },
+          "Guatemala": {
+            "Hombre": 2254,
+            "Mujer": 1335,
+            "Persona no binaria": 5,
+            "No especificado": 40
+          },
+          "Colombia": {
+            "Hombre": 1637,
+            "Mujer": 1080,
+            "Persona no binaria": 4,
+            "No especificado": 36
+          },
+          "Ecuador": {
+            "Hombre": 1249,
+            "Mujer": 984,
+            "Persona no binaria": 2,
+            "No especificado": 25
+          },
+          "El Salvador": {
+            "Hombre": 1484,
+            "Mujer": 701,
+            "Persona no binaria": 4,
+            "No especificado": 25
+          },
+          "Haití": {
+            "Hombre": 801,
+            "Mujer": 637,
+            "No especificado": 18
+          },
+          "Nicaragua": {
+            "Hombre": 747,
+            "Mujer": 361,
+            "No especificado": 14
+          },
+          "México": {
+            "Hombre": 807,
+            "Mujer": 286,
+            "Persona no binaria": 1,
+            "No especificado": 19
+          },
+          "Perú": {
+            "Hombre": 355,
+            "Mujer": 274,
+            "No especificado": 7
+          },
+          "Cuba": {
+            "Hombre": 238,
+            "Mujer": 157,
+            "Persona no binaria": 2,
+            "No especificado": 2
+          },
+          "Brasil": {
+            "Hombre": 189,
+            "Mujer": 139,
+            "No especificado": 3
+          },
+          "No especificado": {
+            "Hombre": 165,
+            "Mujer": 107,
+            "No especificado": 35
+          },
+          "Chile": {
+            "Hombre": 112,
+            "Mujer": 124,
+            "No especificado": 3
+          },
+          "Afganistán": {
+            "Hombre": 106,
+            "Mujer": 62,
+            "No especificado": 2
+          },
+          "Panamá": {
+            "Hombre": 78,
+            "Mujer": 54
+          },
+          "Rep. Dominicana": {
+            "Hombre": 68,
+            "Mujer": 40,
+            "No especificado": 2
+          },
+          "Angola": {
+            "Hombre": 50,
+            "Mujer": 35
+          },
+          "China": {
+            "Hombre": 41,
+            "Mujer": 17
+          },
+          "Argentina": {
+            "Hombre": 32,
+            "Mujer": 8
+          },
+          "Costa Rica": {
+            "Hombre": 30,
+            "Mujer": 9
+          },
+          "Bolivia": {
+            "Hombre": 20,
+            "Mujer": 18
+          },
+          "Guinea": {
+            "Hombre": 24,
+            "Mujer": 5
+          },
+          "Estados Unidos": {
+            "Hombre": 19,
+            "Mujer": 9
+          },
+          "Belice": {
+            "Hombre": 17,
+            "Mujer": 5,
+            "No especificado": 2
+          },
+          "Marruecos": {
+            "Hombre": 24
+          },
+          "Congo": {
+            "Hombre": 18,
+            "Mujer": 3
+          },
+          "Guinea Ecuatorial": {
+            "Hombre": 10,
+            "Mujer": 11
+          },
+          "Rusia": {
+            "Hombre": 12,
+            "Mujer": 5
+          },
+          "Nigeria": {
+            "Hombre": 12,
+            "Mujer": 4
+          },
+          "Rep. Democrática del Congo": {
+            "Hombre": 10,
+            "Mujer": 5
+          },
+          "Senegal": {
+            "Hombre": 12,
+            "Mujer": 2
+          },
+          "Egipto": {
+            "Hombre": 9,
+            "Mujer": 4
+          },
+          "India": {
+            "Hombre": 7,
+            "Mujer": 4
+          },
+          "Ghana": {
+            "Hombre": 9,
+            "No especificado": 1
+          },
+          "Camerún": {
+            "Hombre": 6,
+            "Mujer": 3
+          },
+          "Irán": {
+            "Hombre": 8,
+            "Mujer": 1
+          },
+          "Jamaica": {
+            "Hombre": 6,
+            "Mujer": 3
+          },
+          "Mauritania": {
+            "Hombre": 9
+          },
+          "Rep. Centroafricana": {
+            "Hombre": 6,
+            "Mujer": 1
+          },
+          "Guayana Francesa": {
+            "Hombre": 2,
+            "Mujer": 4
+          },
+          "Togo": {
+            "Hombre": 6
+          },
+          "Francia": {
+            "Hombre": 4,
+            "Mujer": 1
+          },
+          "Guyana": {
+            "Hombre": 3,
+            "Mujer": 1,
+            "No especificado": 1
+          },
+          "Jordania": {
+            "Hombre": 5
+          },
+          "Somalia": {
+            "Hombre": 4,
+            "Mujer": 1
+          },
+          "Sudán": {
+            "Hombre": 4,
+            "Mujer": 1
+          },
+          "Canadá": {
+            "Hombre": 2,
+            "Mujer": 2
+          },
+          "Etiopía": {
+            "Hombre": 4
+          },
+          "Pakistán": {
+            "Hombre": 1,
+            "Mujer": 3
+          },
+          "Uruguay": {
+            "Hombre": 4
+          },
+          "Argelia": {
+            "Hombre": 2,
+            "Mujer": 1
+          },
+          "Armenia": {
+            "Hombre": 3
+          },
+          "Burundi": {
+            "Hombre": 2,
+            "Mujer": 1
+          },
+          "España": {
+            "Hombre": 2,
+            "Mujer": 1
+          },
+          "Guinea-Bissau": {
+            "Hombre": 2,
+            "Mujer": 1
+          },
+          "Italia": {
+            "Hombre": 2,
+            "Mujer": 1
+          },
+          "Laos": {
+            "Hombre": 1,
+            "Mujer": 2
+          },
+          "Libia": {
+            "Hombre": 2,
+            "Mujer": 1
+          },
+          "Siria": {
+            "Hombre": 1,
+            "Mujer": 2
+          },
+          "Tanzania": {
+            "Hombre": 1,
+            "Mujer": 2
+          },
+          "Ucrania": {
+            "Hombre": 1,
+            "Mujer": 2
+          },
+          "Antillas Neerlandesas": {
+            "Hombre": 2
+          },
+          "Benín": {
+            "Hombre": 2
+          },
+          "Eritrea": {
+            "Hombre": 2
+          },
+          "Iraq": {
+            "Hombre": 2
+          },
+          "Macao": {
+            "Hombre": 2
+          },
+          "Níger": {
+            "Hombre": 2
+          },
+          "Sudáfrica": {
+            "Hombre": 2
+          },
+          "Turquía": {
+            "Hombre": 2
+          },
+          "Uganda": {
+            "Hombre": 1,
+            "Mujer": 1
+          },
+          "Uzbekistán": {
+            "Persona no binaria": 2
+          },
+          "Vanuatu": {
+            "Hombre": 1,
+            "Mujer": 1
+          },
+          "Albania": {
+            "Hombre": 1
+          },
+          "Alemania": {
+            "Hombre": 1
+          },
+          "Arabia Saudita": {
+            "Hombre": 1
+          },
+          "Australia": {
+            "Mujer": 1
+          },
+          "Bangladesh": {
+            "Hombre": 1
+          },
+          "Burkina Faso": {
+            "Hombre": 1
+          },
+          "Cabo Verde": {
+            "Hombre": 1
+          },
+          "Chipre": {
+            "Hombre": 1
+          },
+          "Costa De Marfil": {
+            "Hombre": 1
+          },
+          "Dominica": {
+            "Mujer": 1
+          },
+          "Eslovenia": {
+            "Hombre": 1
+          },
+          "Grecia": {
+            "Hombre": 1
+          },
+          "Hong Kong": {
+            "Hombre": 1
+          },
+          "Kenia": {
+            "Hombre": 1
+          },
+          "Lesotho": {
+            "Hombre": 1
+          },
+          "Liberia": {
+            "Mujer": 1
+          },
+          "Mali": {
+            "Hombre": 1
+          },
+          "Mayotte": {
+            "Hombre": 1
+          },
+          "Micronesia": {
+            "Mujer": 1
+          },
+          "Namibia": {
+            "Mujer": 1
+          },
+          "Papúa Nueva Guinea": {
+            "Hombre": 1
+          },
+          "Paraguay": {
+            "Hombre": 1
+          },
+          "Polinesia Francesa": {
+            "Hombre": 1
+          },
+          "Rep. Eslovaca": {
+            "Hombre": 1
+          },
+          "Trinidad y Tobago": {
+            "Mujer": 1
+          },
+          "Vietnam": {
+            "Hombre": 1
+          },
+          "Yemen": {
+            "Hombre": 1
+          }
+        }
+      },
+      "pais_destino": {
+        "grupo_etario": {
+          "Estados Unidos": {
+            "Niñxs": 933,
+            "Adolescentes": 285,
+            "Adultos jóvenes": 1957,
+            "Adultos": 1730,
+            "Adultos mayores": 23,
+            "No especificado": 31
+          },
+          "México": {
+            "Niñxs": 89,
+            "Adolescentes": 31,
+            "Adultos jóvenes": 354,
+            "Adultos": 397,
+            "Adultos mayores": 17,
+            "No especificado": 2
+          },
+          "Honduras": {
+            "Adultos jóvenes": 26,
+            "Adultos": 20
+          },
+          "Guatemala": {
+            "Niñxs": 4,
+            "Adultos jóvenes": 9,
+            "Adultos": 17,
+            "Adultos mayores": 1
+          },
+          "Canadá": {
+            "Niñxs": 4,
+            "Adolescentes": 1,
+            "Adultos jóvenes": 10,
+            "Adultos": 11
+          },
+          "Venezuela": {
+            "Niñxs": 3,
+            "Adolescentes": 4,
+            "Adultos jóvenes": 4,
+            "Adultos": 8
+          },
+          "Colombia": {
+            "Niñxs": 3,
+            "Adolescentes": 2,
+            "Adultos jóvenes": 3,
+            "Adultos": 9,
+            "Adultos mayores": 1
+          },
+          "El Salvador": {
+            "Niñxs": 2,
+            "Adultos jóvenes": 6,
+            "Adultos": 6
+          },
+          "Brasil": {
+            "Niñxs": 1,
+            "Adolescentes": 1,
+            "Adultos jóvenes": 3,
+            "Adultos": 3
+          },
+          "Emiratos Arabes Unidos": {
+            "Adolescentes": 1,
+            "Adultos jóvenes": 5,
+            "Adultos": 2
+          },
+          "Ecuador": {
+            "Niñxs": 2,
+            "Adolescentes": 1,
+            "Adultos jóvenes": 2,
+            "Adultos": 1
+          },
+          "España": {
+            "Niñxs": 1,
+            "Adultos jóvenes": 3,
+            "Adultos": 2
+          },
+          "Nueva Zelanda": {
+            "Niñxs": 3,
+            "Adultos jóvenes": 1,
+            "Adultos": 1
+          },
+          "Estados Unidos|México": {
+            "Adultos jóvenes": 3,
+            "Adultos": 1
+          },
+          "Nicaragua": {
+            "Adultos jóvenes": 1,
+            "Adultos": 1,
+            "Adultos mayores": 2
+          },
+          "Armenia": {
+            "Adolescentes": 2,
+            "Adultos": 1
+          },
+          "Estonia": {
+            "Niñxs": 1,
+            "Adultos": 1,
+            "No especificado": 1
+          },
+          "Mayotte": {
+            "Adultos jóvenes": 3
+          },
+          "Chile": {
+            "Adultos jóvenes": 2
+          },
+          "Afganistán": {
+            "Adultos": 1
+          },
+          "Cuba": {
+            "Adultos jóvenes": 1
+          },
+          "Estados Unidos|Guatemala": {
+            "Adultos": 1
+          },
+          "Tailandia": {
+            "Adultos jóvenes": 1
+          }
+        },
+        "genero": {
+          "Estados Unidos": {
+            "Hombre": 3072,
+            "Mujer": 1855,
+            "Persona no binaria": 6,
+            "No especificado": 26
+          },
+          "México": {
+            "Hombre": 665,
+            "Mujer": 223,
+            "Persona no binaria": 1,
+            "No especificado": 1
+          },
+          "Honduras": {
+            "Hombre": 43,
+            "Mujer": 3
+          },
+          "Guatemala": {
+            "Hombre": 29,
+            "Mujer": 2
+          },
+          "Canadá": {
+            "Hombre": 19,
+            "Mujer": 7
+          },
+          "Venezuela": {
+            "Hombre": 9,
+            "Mujer": 9,
+            "No especificado": 1
+          },
+          "Colombia": {
+            "Hombre": 10,
+            "Mujer": 8
+          },
+          "El Salvador": {
+            "Hombre": 11,
+            "Mujer": 3
+          },
+          "Brasil": {
+            "Hombre": 5,
+            "Mujer": 3
+          },
+          "Emiratos Arabes Unidos": {
+            "Hombre": 7,
+            "Mujer": 1
+          },
+          "Ecuador": {
+            "Hombre": 2,
+            "Mujer": 4
+          },
+          "España": {
+            "Hombre": 2,
+            "Mujer": 4
+          },
+          "Nueva Zelanda": {
+            "Hombre": 1,
+            "Mujer": 4
+          },
+          "Estados Unidos|México": {
+            "Hombre": 4
+          },
+          "Nicaragua": {
+            "Hombre": 4
+          },
+          "Armenia": {
+            "Hombre": 1,
+            "Mujer": 2
+          },
+          "Estonia": {
+            "Hombre": 3
+          },
+          "Mayotte": {
+            "Mujer": 3
+          },
+          "Chile": {
+            "Hombre": 2
+          },
+          "Afganistán": {
+            "Hombre": 1
+          },
+          "Cuba": {
+            "Hombre": 1
+          },
+          "Estados Unidos|Guatemala": {
+            "Hombre": 1
+          },
+          "Tailandia": {
+            "Hombre": 1
+          }
+        }
+      }
+    },
+    "cross_tabs_meta": {
+      "source_file": "base_monitoreo-de-proteccion_redodem.csv",
+      "source_url": "https://monitoreo-de-proteccion.redodem.org/csv/base_monitoreo-de-proteccion_redodem.zip",
+      "source_sha256": "2b580685f2eb22c8213dd75ce9c41aee2957e2bb351f387ec6b7edfef646cba8",
+      "rows": 40800,
+      "destination_rows": 6059,
+      "destination_na": 34741,
+      "age_order": [
+        "Niñxs",
+        "Adolescentes",
+        "Adultos jóvenes",
+        "Adultos",
+        "Adultos mayores",
+        "No especificado"
+      ],
+      "gender_order": [
+        "Hombre",
+        "Mujer",
+        "Persona no binaria",
+        "No especificado"
+      ],
+      "note": "Cruces calculados desde las filas del CSV REDODEM. Destino excluye las filas con NA; edad y género conservan «No especificado»."
+    },
+    "motif_combinations": {
+      "unit": "filas de atención/observación",
+      "total_rows": 40800,
+      "literal_na": 34462,
+      "blank": 0,
+      "records_with_value": 6338,
+      "mentions_total": 7863,
+      "combination_count": 14,
+      "categories": [
+        {
+          "category": "Socioeconómicos",
+          "mentions": 4066
+        },
+        {
+          "category": "De violencias",
+          "mentions": 3325
+        },
+        {
+          "category": "Personales",
+          "mentions": 405
+        },
+        {
+          "category": "Ambientales",
+          "mentions": 67
+        }
+      ],
+      "combinations": [
+        {
+          "key": "Socioeconómicos",
+          "categories": [
+            "Socioeconómicos"
+          ],
+          "rows": 2720,
+          "category_count": 1
+        },
+        {
+          "key": "De violencias",
+          "categories": [
+            "De violencias"
+          ],
+          "rows": 2049,
+          "category_count": 1
+        },
+        {
+          "key": "Socioeconómicos|De violencias",
+          "categories": [
+            "Socioeconómicos",
+            "De violencias"
+          ],
+          "rows": 1103,
+          "category_count": 2
+        },
+        {
+          "key": "Socioeconómicos|Personales",
+          "categories": [
+            "Socioeconómicos",
+            "Personales"
+          ],
+          "rows": 148,
+          "category_count": 2
+        },
+        {
+          "key": "Personales",
+          "categories": [
+            "Personales"
+          ],
+          "rows": 131,
+          "category_count": 1
+        },
+        {
+          "key": "Socioeconómicos|De violencias|Personales",
+          "categories": [
+            "Socioeconómicos",
+            "De violencias",
+            "Personales"
+          ],
+          "rows": 69,
+          "category_count": 3
+        },
+        {
+          "key": "De violencias|Personales",
+          "categories": [
+            "De violencias",
+            "Personales"
+          ],
+          "rows": 51,
+          "category_count": 2
+        },
+        {
+          "key": "De violencias|Ambientales",
+          "categories": [
+            "De violencias",
+            "Ambientales"
+          ],
+          "rows": 29,
+          "category_count": 2
+        },
+        {
+          "key": "Socioeconómicos|De violencias|Ambientales",
+          "categories": [
+            "Socioeconómicos",
+            "De violencias",
+            "Ambientales"
+          ],
+          "rows": 19,
+          "category_count": 3
+        },
+        {
+          "key": "Ambientales",
+          "categories": [
+            "Ambientales"
+          ],
+          "rows": 10,
+          "category_count": 1
+        },
+        {
+          "key": "Socioeconómicos|De violencias|Personales|Ambientales",
+          "categories": [
+            "Socioeconómicos",
+            "De violencias",
+            "Personales",
+            "Ambientales"
+          ],
+          "rows": 4,
+          "category_count": 4
+        },
+        {
+          "key": "Socioeconómicos|Ambientales",
+          "categories": [
+            "Socioeconómicos",
+            "Ambientales"
+          ],
+          "rows": 3,
+          "category_count": 2
+        },
+        {
+          "key": "Personales|Ambientales",
+          "categories": [
+            "Personales",
+            "Ambientales"
+          ],
+          "rows": 1,
+          "category_count": 2
+        },
+        {
+          "key": "De violencias|Personales|Ambientales",
+          "categories": [
+            "De violencias",
+            "Personales",
+            "Ambientales"
+          ],
+          "rows": 1,
+          "category_count": 3
+        }
+      ],
+      "missing_note": "El literal NA no es un motivo: representa una ficha sin motivo registrado. Las filas con NA no entran en las combinaciones.",
+      "note": "Cada fila se cuenta una vez en su combinación exacta; las combinaciones no se descomponen en pares parciales. Las menciones por categoría pueden superar las filas porque una ficha puede declarar varios motivos.",
+      "reconciliation": {
+        "combination_rows": 6338,
+        "mentions": 7863,
+        "literal_na": 34462,
+        "blank": 0
+      }
+    },
+    "violence_perpetrator": {
+      "unit": "filas de atención/observación",
+      "violence_categories": [
+        {
+          "category": "Robo o asalto",
+          "rows_with_value": 228
+        },
+        {
+          "category": "Extorsión",
+          "rows_with_value": 151
+        },
+        {
+          "category": "Agresión física o verbal",
+          "rows_with_value": 104
+        },
+        {
+          "category": "Secuestro",
+          "rows_with_value": 73
+        },
+        {
+          "category": "Otros",
+          "rows_with_value": 48
+        },
+        {
+          "category": "Amenazas",
+          "rows_with_value": 40
+        },
+        {
+          "category": "Intento de homicidio o secuestro",
+          "rows_with_value": 25
+        },
+        {
+          "category": "Tortura psicológica o psicoemocional",
+          "rows_with_value": 20
+        },
+        {
+          "category": "Violencia sexual",
+          "rows_with_value": 17
+        },
+        {
+          "category": "Discriminación",
+          "rows_with_value": 12
+        },
+        {
+          "category": "Desplazamiento forzado",
+          "rows_with_value": 8
+        },
+        {
+          "category": "Destrucción de documentos de identidad y migratorios",
+          "rows_with_value": 4
+        },
+        {
+          "category": "Separación familiar",
+          "rows_with_value": 4
+        },
+        {
+          "category": "Intrusión violenta a su vivienda",
+          "rows_with_value": 3
+        }
+      ],
+      "perpetrator_categories": [
+        {
+          "category": "Crimen organizado",
+          "rows_with_value": 128
+        },
+        {
+          "category": "Particulares",
+          "rows_with_value": 112
+        },
+        {
+          "category": "Autoridades migratorias",
+          "rows_with_value": 109
+        },
+        {
+          "category": "Autoridades policiales",
+          "rows_with_value": 108
+        },
+        {
+          "category": "Delincuencia común",
+          "rows_with_value": 83
+        },
+        {
+          "category": "Autoridades otras",
+          "rows_with_value": 25
+        },
+        {
+          "category": "Miembro de pandilla",
+          "rows_with_value": 11
+        },
+        {
+          "category": "Autoridades militares",
+          "rows_with_value": 9
+        },
+        {
+          "category": "No especificado",
+          "rows_with_value": 7
+        },
+        {
+          "category": "Coyote",
+          "rows_with_value": 5
+        }
+      ],
+      "cells": [
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Crimen organizado",
+          "status": "visible",
+          "rows": 78
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 60
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Autoridades migratorias",
+          "status": "visible",
+          "rows": 9
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Autoridades policiales",
+          "status": "visible",
+          "rows": 35
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Delincuencia común",
+          "status": "visible",
+          "rows": 74
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Autoridades otras",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Miembro de pandilla",
+          "status": "visible",
+          "rows": 11
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Autoridades militares",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "No especificado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Robo o asalto",
+          "perpetrator": "Coyote",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "Crimen organizado",
+          "status": "visible",
+          "rows": 21
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 30
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "Autoridades migratorias",
+          "status": "visible",
+          "rows": 60
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "Autoridades policiales",
+          "status": "visible",
+          "rows": 57
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "Delincuencia común",
+          "status": "visible",
+          "rows": 13
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "Autoridades otras",
+          "status": "visible",
+          "rows": 17
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "Autoridades militares",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "No especificado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Extorsión",
+          "perpetrator": "Coyote",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "Crimen organizado",
+          "status": "visible",
+          "rows": 26
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 20
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "Autoridades migratorias",
+          "status": "visible",
+          "rows": 39
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "Autoridades policiales",
+          "status": "visible",
+          "rows": 28
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "Delincuencia común",
+          "status": "visible",
+          "rows": 17
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "Autoridades otras",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "Autoridades militares",
+          "status": "visible",
+          "rows": 5
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "No especificado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Agresión física o verbal",
+          "perpetrator": "Coyote",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Secuestro",
+          "perpetrator": "Crimen organizado",
+          "status": "visible",
+          "rows": 46
+        },
+        {
+          "violence": "Secuestro",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 14
+        },
+        {
+          "violence": "Secuestro",
+          "perpetrator": "Autoridades migratorias",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Secuestro",
+          "perpetrator": "Autoridades policiales",
+          "status": "visible",
+          "rows": 6
+        },
+        {
+          "violence": "Secuestro",
+          "perpetrator": "Delincuencia común",
+          "status": "visible",
+          "rows": 7
+        },
+        {
+          "violence": "Secuestro",
+          "perpetrator": "Autoridades otras",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Secuestro",
+          "perpetrator": "Coyote",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Otros",
+          "perpetrator": "Crimen organizado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Otros",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 16
+        },
+        {
+          "violence": "Otros",
+          "perpetrator": "Autoridades migratorias",
+          "status": "visible",
+          "rows": 23
+        },
+        {
+          "violence": "Otros",
+          "perpetrator": "Autoridades policiales",
+          "status": "visible",
+          "rows": 20
+        },
+        {
+          "violence": "Otros",
+          "perpetrator": "Delincuencia común",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Otros",
+          "perpetrator": "Autoridades otras",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Otros",
+          "perpetrator": "No especificado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Amenazas",
+          "perpetrator": "Crimen organizado",
+          "status": "visible",
+          "rows": 17
+        },
+        {
+          "violence": "Amenazas",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 12
+        },
+        {
+          "violence": "Amenazas",
+          "perpetrator": "Autoridades migratorias",
+          "status": "visible",
+          "rows": 10
+        },
+        {
+          "violence": "Amenazas",
+          "perpetrator": "Autoridades policiales",
+          "status": "visible",
+          "rows": 12
+        },
+        {
+          "violence": "Amenazas",
+          "perpetrator": "Delincuencia común",
+          "status": "visible",
+          "rows": 5
+        },
+        {
+          "violence": "Amenazas",
+          "perpetrator": "Miembro de pandilla",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Amenazas",
+          "perpetrator": "No especificado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Amenazas",
+          "perpetrator": "Coyote",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Intento de homicidio o secuestro",
+          "perpetrator": "Crimen organizado",
+          "status": "visible",
+          "rows": 14
+        },
+        {
+          "violence": "Intento de homicidio o secuestro",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 8
+        },
+        {
+          "violence": "Intento de homicidio o secuestro",
+          "perpetrator": "Autoridades migratorias",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Intento de homicidio o secuestro",
+          "perpetrator": "Autoridades policiales",
+          "status": "visible",
+          "rows": 5
+        },
+        {
+          "violence": "Intento de homicidio o secuestro",
+          "perpetrator": "Delincuencia común",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Intento de homicidio o secuestro",
+          "perpetrator": "No especificado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Tortura psicológica o psicoemocional",
+          "perpetrator": "Crimen organizado",
+          "status": "visible",
+          "rows": 11
+        },
+        {
+          "violence": "Tortura psicológica o psicoemocional",
+          "perpetrator": "Particulares",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Tortura psicológica o psicoemocional",
+          "perpetrator": "Autoridades migratorias",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Tortura psicológica o psicoemocional",
+          "perpetrator": "Autoridades policiales",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Tortura psicológica o psicoemocional",
+          "perpetrator": "Delincuencia común",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Tortura psicológica o psicoemocional",
+          "perpetrator": "Autoridades otras",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Violencia sexual",
+          "perpetrator": "Crimen organizado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Violencia sexual",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 7
+        },
+        {
+          "violence": "Violencia sexual",
+          "perpetrator": "Autoridades policiales",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Violencia sexual",
+          "perpetrator": "Delincuencia común",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Violencia sexual",
+          "perpetrator": "Autoridades otras",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Discriminación",
+          "perpetrator": "Crimen organizado",
+          "status": "visible",
+          "rows": 5
+        },
+        {
+          "violence": "Discriminación",
+          "perpetrator": "Particulares",
+          "status": "visible",
+          "rows": 5
+        },
+        {
+          "violence": "Discriminación",
+          "perpetrator": "Autoridades migratorias",
+          "status": "visible",
+          "rows": 6
+        },
+        {
+          "violence": "Desplazamiento forzado",
+          "perpetrator": "Crimen organizado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Desplazamiento forzado",
+          "perpetrator": "Autoridades migratorias",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Desplazamiento forzado",
+          "perpetrator": "Autoridades policiales",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Destrucción de documentos de identidad y migratorios",
+          "perpetrator": "Autoridades migratorias",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Separación familiar",
+          "perpetrator": "Crimen organizado",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        },
+        {
+          "violence": "Intrusión violenta a su vivienda",
+          "perpetrator": "Particulares",
+          "status": "suppressed",
+          "rows": null,
+          "range": "1–4"
+        }
+      ],
+      "visible_cells": 38,
+      "suppressed_cells": 38,
+      "zero_pairs": 64,
+      "privacy_threshold": 5,
+      "privacy_rule": "Se publica la cifra exacta cuando la celda tiene 5 o más filas. Las celdas con 1–4 filas se muestran como rango suprimido y no exponen el valor exacto. Los pares con 0 filas no se listan.",
+      "privacy_decision": "El proyecto no tenía un umbral de privacidad para esta matriz. Se adopta 5 por ser el mínimo habitual para no publicar celdas pequeñas de una población vulnerable; el umbral queda como parámetro explícito y se aplica solo a la cifra de la celda.",
+      "source_row_id": "posición 1-based del CSV; se usa solo para contar filas distintas y no se exporta",
+      "pair_rows_total": 950,
+      "both_fields_rows": 469,
+      "violence_only_rows": 30,
+      "perpetrator_only_rows": 0,
+      "neither_field_rows": 40301,
+      "violence_na": 40301,
+      "perpetrator_na": 40331,
+      "no_especificado_only_rows": 3,
+      "note": "Cada celda cuenta filas distintas que contienen ambas categorías; los marginales no se usan para reconstruir el cruce. La coaparición no demuestra causalidad, verificación del perpetrador ni una relación confirmada.",
+      "reconciliation": {
+        "pairs_with_rows": 76,
+        "pair_rows_total": 950,
+        "visible_cells": 38,
+        "suppressed_cells": 38,
+        "zero_pairs": 64,
+        "both_fields_rows": 469,
+        "violence_only_rows": 30,
+        "perpetrator_only_rows": 0,
+        "neither_field_rows": 40301
+      }
+    },
+    "violence_coverage_by_year": [
+      {
+        "year": "2023",
+        "total_rows": 22123,
+        "rows_with_value": 317,
+        "literal_na": 21806,
+        "blank": 0,
+        "percent": 1.4329
+      },
+      {
+        "year": "2024",
+        "total_rows": 18677,
+        "rows_with_value": 182,
+        "literal_na": 18495,
+        "blank": 0,
+        "percent": 0.9745
+      }
+    ],
+    "analysis_meta": {
+      "analysis_version": "0.34.0",
+      "schema_version": "redodem_attention_v1",
+      "source_file": "base_monitoreo-de-proteccion_redodem.csv",
+      "source_url": "https://monitoreo-de-proteccion.redodem.org/csv/base_monitoreo-de-proteccion_redodem.zip",
+      "source_sha256": "2b580685f2eb22c8213dd75ce9c41aee2957e2bb351f387ec6b7edfef646cba8",
+      "rows": 40800,
+      "generated_by": "preparar_redodem.py",
+      "source_row_id": "posición 1-based del CSV; se usa solo para contar filas distintas y no se exporta",
+      "privacy_threshold": 5,
+      "privacy_decision": "Umbral 5 para la matriz de coaparición; no existía un parámetro previo en el proyecto. Las celdas 1–4 se suprimen y los ceros no se listan como pares.",
+      "reconciliation": {
+        "total_rows": 40800,
+        "motif_rows": 6338,
+        "motif_mentions": 7863,
+        "motif_na": 34462,
+        "motif_blank": 0,
+        "violence_rows": 499,
+        "violence_mentions": 737,
+        "violence_na": 40301,
+        "violence_blank": 0,
+        "perpetrator_rows": 469,
+        "perpetrator_mentions": 597,
+        "perpetrator_na": 40331,
+        "perpetrator_blank": 0,
+        "both_fields_rows": 469,
+        "violence_only_rows": 30,
+        "perpetrator_only_rows": 0,
+        "neither_field_rows": 40301,
+        "no_especificado_only_rows": 3,
+        "cooccurrence_pairs": 76,
+        "cooccurrence_pair_rows": 950,
+        "max_pair_rows": 78,
+        "year_rows": 40800,
+        "year_value_rows": 499
+      }
+    }
+  },
+  "missing_search_aggregates": [
+    {
+      "source_id": "eaaf_proyecto_frontera_public_aggregates",
+      "cutoff_date": "2025-02-28",
+      "concept": "casos_migrantes_no_localizados",
+      "value": "2351",
+      "operator": "=",
+      "unit": "casos",
+      "geography_scope": "corredor Centroamérica-México-Estados Unidos",
+      "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf",
+      "document_date": "2025-03",
+      "methodology_note": "Agregado publicado por EAAF; no equivale al total real de personas desaparecidas.",
+      "review_status": "needs_second_person_review"
+    },
+    {
+      "source_id": "eaaf_proyecto_frontera_public_aggregates",
+      "cutoff_date": "2025-02-28",
+      "concept": "familias",
+      "value": "2240",
+      "operator": "=",
+      "unit": "familias",
+      "geography_scope": "corredor Centroamérica-México-Estados Unidos",
+      "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf",
+      "document_date": "2025-03",
+      "methodology_note": "Indicador distinto del número de casos; no sumar con casos.",
+      "review_status": "needs_second_person_review"
+    },
+    {
+      "source_id": "eaaf_proyecto_frontera_public_aggregates",
+      "cutoff_date": "2025-02-28",
+      "concept": "perfiles_geneticos_familiares",
+      "value": "6000",
+      "operator": "=",
+      "unit": "perfiles",
+      "geography_scope": "corredor Centroamérica-México-Estados Unidos",
+      "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf",
+      "document_date": "2025-03",
+      "methodology_note": "Medida de actividad forense; no equivale a personas desaparecidas ni a identificaciones.",
+      "review_status": "needs_second_person_review"
+    },
+    {
+      "source_id": "eaaf_proyecto_frontera_public_aggregates",
+      "cutoff_date": "2026-08-14",
+      "concept": "casos_migrantes_desaparecidos",
+      "value": "2500",
+      "operator": ">",
+      "unit": "casos",
+      "geography_scope": "corredor Centroamérica-México-Estados Unidos",
+      "source_url": "https://eaaf.org/identificacion-de-siete-personas-migrantes-desaparecidas-en-estados-unidos/",
+      "document_date": "2026-08",
+      "methodology_note": "El comunicado informa más de 2500 casos; se conserva el operador > y no se interpreta como cifra exacta.",
+      "review_status": "needs_second_person_review"
+    },
+    {
+      "source_id": "eaaf_proyecto_frontera_public_aggregates",
+      "cutoff_date": "2026-08-14",
+      "concept": "personas_identificadas",
+      "value": "490",
+      "operator": ">",
+      "unit": "personas",
+      "geography_scope": "corredor Centroamérica-México-Estados Unidos",
+      "source_url": "https://eaaf.org/identificacion-de-siete-personas-migrantes-desaparecidas-en-estados-unidos/",
+      "document_date": "2026-08",
+      "methodology_note": "El comunicado informa más de 490 identificaciones; no confundir con casos registrados ni sumar con los anteriores.",
+      "review_status": "needs_second_person_review"
+    }
+  ],
+  "map_status": {
+    "corridor": "no se dibuja; geometría y procedencia pendientes de validar",
+    "rail": "pendiente de descarga y validación de la capa SHP oficial",
+    "incident_points": "ocultos hasta revisar licencias, precisión espacial y solapamiento",
+    "services": "sin marcadores hasta verificar operación y acceso"
+  },
+  "eventos_migratorios": {
+    "source": "UPMRIP/SEGOB · Boletín Estadístico, Cuadro 3.1",
+    "source_url": "https://www.portales.segob.gob.mx/es/PoliticaMigratoria/CuadrosBOLETIN?Anual=2026&Secc=3",
+    "definition_url": "https://portales.segob.gob.mx/es/PoliticaMigratoria/EvPerMigrIrreg",
+    "definition": "Eventos de personas en situación migratoria irregular en México a las que el INM inició un Procedimiento Administrativo Migratorio (PAM), independientemente de la figura administrativa. La fuente homologa el concepto para comparabilidad; una misma persona pudo tener más de un evento.",
+    "unit": "eventos",
+    "updated_at": "2026-11-13",
+    "consulted_at": "2026-11-13",
+    "cutoff": "2026-09",
+    "cutoff_label": "septiembre de 2026",
+    "series": [
+      {
+        "year": 2021,
+        "eventos": 309692,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2022,
+        "eventos": 441409,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2023,
+        "eventos": 778907,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2024,
+        "eventos": 1234698,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2025,
+        "eventos": 155730,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2026,
+        "eventos": 31077,
+        "unit": "eventos",
+        "months": 9,
+        "coverage": "enero–septiembre",
+        "status": "parcial"
+      }
+    ],
+    "notes": [
+      "Serie oficial de eventos administrativos; no son personas únicas.",
+      "2026 solo incluye enero–septiembre; no se proyecta ni se anualiza.",
+      "La definición administrativa cambió en 2013 y 2021; la fuente homologa el concepto.",
+      "Los cuadros se publican como información preliminar sujeta a validación.",
+      "La fecha consignada es la de consulta del cuadro oficial; la fuente no publica una fecha de actualización explícita.",
+      "2020 no se incluye en la serie: su cuadro 3.1 reporta «extranjeros presentados» con columnas distintas; la serie comparable comienza en 2021."
+    ]
+  },
+  "devoluciones": {
+    "source": "UPMRIP/SEGOB · Boletín Estadístico, Cuadro 3.2.3",
+    "source_url": "https://www.portales.segob.gob.mx/es/PoliticaMigratoria/CuadrosBOLETIN?Anual=2026&Secc=3",
+    "definition": "Eventos de personas devueltas por la autoridad migratoria mexicana, según tipo de resolución. Una persona pudo tener más de un evento.",
+    "unit": "eventos",
+    "updated_at": "2026-11-13",
+    "consulted_at": "2026-11-13",
+    "cutoff": "2026-09",
+    "cutoff_label": "septiembre de 2026",
+    "types": [
+      {
+        "key": "deportacion",
+        "label": "Eventos de deportación",
+        "definition": "Se refiere a devoluciones de migrantes a su país de origen que no observaron las disposiciones contenidas en la Ley de Migración y su Reglamento, según lo previsto los arts. 111, 115, 118 y 122 de dicha Ley y de los arts. 242 y 243 de su Reglamento, previo proceso administrativo de presentación, según lo establecido en el art. 99 de la misma Ley.",
+        "definitionCorta": "Devolución a su país de origen de migrantes que no observaron la Ley de Migración, previo procedimiento administrativo de presentación."
+      },
+      {
+        "key": "retorno_asistido",
+        "label": "Retorno asistido",
+        "definition": "Se refiere a eventos de migrantes de 18 años y más, que solicitaron el beneficio de retorno asistido para ser devueltos a su país de origen, según lo previsto los arts. 111, 115, 118 y 119 de la Ley de Migración y del art. 193 de su Reglamento, previo proceso administrativo de presentación según lo establecido en el art. 99 de la misma Ley.",
+        "definitionCorta": "Migrantes de 18 años y más que solicitaron el beneficio de retorno asistido para ser devueltos a su país de origen, previo procedimiento de presentación."
+      },
+      {
+        "key": "retorno_asistido_nna",
+        "label": "Retorno asistido de niñas, niños o adolescentes",
+        "definition": "Se refiere a eventos de devolución de niñas, niños o adolescentes de 18 años a su país de origen, según los previsto en los arts. 112, 115 y 120 de la Ley de Migración y del art. 193 de su Reglamento; así como del art. 97 de la Ley General de los Derechos de Niñas, Niños y Adolescentes.",
+        "definitionCorta": "Devolución de niñas, niños o adolescentes a su país de origen conforme a la Ley de Migración y la Ley General de los Derechos de Niñas, Niños y Adolescentes."
+      }
+    ],
+    "series": [
+      {
+        "year": 2021,
+        "total": 130275,
+        "deportacion": 2298,
+        "retorno_asistido": 104929,
+        "retorno_asistido_nna": 23048,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2022,
+        "total": 121963,
+        "deportacion": 4143,
+        "retorno_asistido": 104897,
+        "retorno_asistido_nna": 12923,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2023,
+        "total": 54728,
+        "deportacion": 3626,
+        "retorno_asistido": 43437,
+        "retorno_asistido_nna": 7665,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2024,
+        "total": 20834,
+        "deportacion": 516,
+        "retorno_asistido": 16398,
+        "retorno_asistido_nna": 3920,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2025,
+        "total": 11804,
+        "deportacion": 1153,
+        "retorno_asistido": 9165,
+        "retorno_asistido_nna": 1486,
+        "unit": "eventos",
+        "months": 12,
+        "coverage": "enero–diciembre",
+        "status": "completo"
+      },
+      {
+        "year": 2026,
+        "total": 10829,
+        "deportacion": 4559,
+        "retorno_asistido": 5832,
+        "retorno_asistido_nna": 438,
+        "unit": "eventos",
+        "months": 9,
+        "coverage": "enero–septiembre",
+        "status": "parcial"
+      }
+    ],
+    "notes": [
+      "Eventos administrativos; no son personas únicas.",
+      "El total es la suma de los tres tipos de resolución publicados; no se apila.",
+      "No se suma con los eventos de movilidad ni con alojamiento.",
+      "2026 solo incluye enero–septiembre; no se proyecta ni se anualiza.",
+      "Los cuadros se publican como información preliminar sujeta a validación."
+    ]
+  },
+  "eaaf_public_detail": {
+    "schema_version": "1.0.0",
+    "source_id": "eaaf_proyecto_frontera_public_aggregates",
+    "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf",
+    "cutoff_date": "2025-02-28",
+    "period_start": "2010",
+    "period_end": "2025",
+    "grain": "una observación por indicador × corte × dimensión de desglose × categoría publicada",
+    "records": [
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 2351,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "total",
+        "breakdown_level": "corredor",
+        "category": "Corredor Centroamérica–México–Estados Unidos",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 2240,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "total",
+        "breakdown_level": "corredor",
+        "category": "Corredor Centroamérica–México–Estados Unidos",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 6000,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "total",
+        "breakdown_level": "corredor",
+        "category": "Corredor Centroamérica–México–Estados Unidos",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 406,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "total",
+        "breakdown_level": "corredor",
+        "category": "Corredor Centroamérica–México–Estados Unidos",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 455,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "El Salvador",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 452,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "El Salvador",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 1216,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "El Salvador",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 814,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Honduras",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 766,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Honduras",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 1872,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Honduras",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 104,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Chiapas",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 101,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Chiapas",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 320,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Chiapas",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 122,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Oaxaca",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 120,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Oaxaca",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 325,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Oaxaca",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 238,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Guatemala",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 232,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Guatemala",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 735,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Guatemala",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 578,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "México*",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 529,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "México*",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 1448,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "México*",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Costa Rica",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Costa Rica",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 6,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Costa Rica",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 7,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Ecuador",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 7,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Ecuador",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 12,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Ecuador",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Perú",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Perú",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 5,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Perú",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Brasil",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Brasil",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 3,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Brasil",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 28,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Nicaragua",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 28,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Nicaragua",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 58,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Nicaragua",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 82,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2010",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 155,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2011",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 220,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2012",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 173,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2013",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 84,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2014",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 110,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2015",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 197,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2016",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 116,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2017",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 144,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2018",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 137,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2019",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 19,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2020",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 206,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2021",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 347,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2022",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 189,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2023",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 167,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2024",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 5,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de toma/registro",
+        "category": "2025",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 188,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2010",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 412,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2011",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 678,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2012",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 440,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2013",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 254,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2014",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 259,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2015",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 524,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2016",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 321,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2017",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 336,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2018",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 327,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2019",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 45,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2020",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 479,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2021",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 833,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2022",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 482,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2023",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 408,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2024",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 14,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de recolección",
+        "category": "2025",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 3,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2011",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 12,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2012",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 41,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2013",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 9,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2014",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 23,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2015",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 45,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2016",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 25,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2017",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 29,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2018",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 25,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2019",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 21,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2020",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 22,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2021",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 34,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2022",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 46,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2023",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 64,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2024",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 7,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2011",
+        "period_end": "2025",
+        "breakdown_dimension": "year",
+        "breakdown_level": "año de identificación",
+        "category": "2025",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 80,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "El Salvador",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 85,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Honduras",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 26,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Chiapas",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 19,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Oaxaca",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 68,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Guatemala",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 118,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "México*",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 10,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "banco_mecanismo",
+        "breakdown_level": "banco/mecanismo",
+        "category": "Otros países",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 280,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "place_found_country",
+        "breakdown_level": "país de hallazgo",
+        "category": "Estados Unidos",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 125,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "place_found_country",
+        "breakdown_level": "país de hallazgo",
+        "category": "México",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "identifications",
+        "metric_label": "Identificaciones",
+        "unit": "identificaciones",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "place_found_country",
+        "breakdown_level": "país de hallazgo",
+        "category": "Guatemala",
+        "parent_category": null,
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 12,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Ciudad de México",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 11,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Ciudad de México",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 25,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Ciudad de México",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 28,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Estado de México",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 26,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Estado de México",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 91,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Estado de México",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 78,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Guanajuato",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 71,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Guanajuato",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 212,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Guanajuato",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 22,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Michoacán",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 20,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Michoacán",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 61,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Michoacán",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 13,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Veracruz",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 13,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Veracruz",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 41,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Veracruz",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 55,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Sinaloa",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 55,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Sinaloa",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 156,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Sinaloa",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 16,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Jalisco",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 16,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Jalisco",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 37,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Jalisco",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 27,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "San Luis Potosí",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 26,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "San Luis Potosí",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 73,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "San Luis Potosí",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 29,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Puebla",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 29,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Puebla",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 81,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Puebla",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 7,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Guerrero",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 6,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Guerrero",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 15,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Guerrero",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 255,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tamaulipas",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 224,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tamaulipas",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 575,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tamaulipas",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Zacatecas",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Zacatecas",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 7,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Zacatecas",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 7,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Hidalgo",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 6,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Hidalgo",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 19,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Hidalgo",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Coahuila",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Coahuila",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 4,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Coahuila",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tlaxcala",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tlaxcala",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 8,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tlaxcala",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 6,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Chihuahua",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 5,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Chihuahua",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 14,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Chihuahua",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 4,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Sonora",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 4,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Sonora",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 10,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Sonora",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Querétaro",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Querétaro",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Querétaro",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 9,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Aguascalientes",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 7,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Aguascalientes",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 12,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Aguascalientes",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Nayarit",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Nayarit",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 2,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Nayarit",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Colima",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Colima",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 0,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Colima",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "mnl_cases",
+        "metric_label": "Casos de migrantes no localizados",
+        "unit": "casos",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tabasco",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "families",
+        "metric_label": "Familias participantes",
+        "unit": "familias",
+        "value": 1,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tabasco",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      },
+      {
+        "metric_key": "dna_donors",
+        "metric_label": "Donantes de ADN reportados",
+        "unit": "donantes",
+        "value": 4,
+        "operator": "=",
+        "cutoff_date": "2025-02-28",
+        "period_start": "2010",
+        "period_end": "2025",
+        "breakdown_dimension": "state_mexico",
+        "breakdown_level": "entidad federativa",
+        "category": "Tabasco",
+        "parent_category": "México*",
+        "source_id": "eaaf_proyecto_frontera_public_aggregates",
+        "source_url": "https://eaaf.org/wp-content/uploads/2025/03/Estadisticas_Proyecto-Frontera_Generales_28feb2025-2.pdf"
+      }
+    ],
+    "dimension_notes": {
+      "year": "Año de toma/registro o recolección según la gráfica fuente; no es fecha de desaparición. La serie de identificaciones comienza en 2011.",
+      "banco_mecanismo": "Banco forense o mecanismo que registra/toma el dato; no es nacionalidad ni lugar de desaparición.",
+      "place_found_country": "País de hallazgo de restos para identificaciones; separado del banco/mecanismo.",
+      "state_mexico": "Desglose de México* por entidad listado en el cuadro EAAF. Las entidades ausentes no se imputan a cero."
+    },
+    "methodology_notes": [
+      "Casos, familias, donantes e identificaciones conservan unidades distintas y no se suman entre sí.",
+      "El resumen del PDF también describe el total de 6,000 como perfiles genéticos de donantes; los desgloses anuales y por banco lo titulan donantes de ADN. Se conserva la etiqueta de los desgloses y no se interpreta como familiares únicos.",
+      "El corte 2026-08-14 contiene solo agregados >2,500 casos y >490 identificaciones; permanece como snapshot independiente y no se conecta a esta serie detallada.",
+      "El reporte no publica desglose de estos indicadores por edad, sexo ni nacionalidad; no se derivan esas variables.",
+      "Los casos por año describen año de toma/registro publicado, no el año en que ocurrió la desaparición.",
+      "México* incluye casos ingresados dentro de México fuera de Chiapas y Oaxaca, donde operan bancos forenses."
+    ],
+    "reconciliation": {
+      "cases_by_bank": 2351,
+      "families_by_bank": 2240,
+      "donors_by_bank": 6000,
+      "cases_by_year": 2351,
+      "donors_by_year": 6000,
+      "identifications_by_year": 406,
+      "identifications_by_bank": 406,
+      "identifications_by_place_found": 406,
+      "mexico_cases_by_state": 578,
+      "mexico_families_by_state": 529,
+      "mexico_donors_by_state": 1448
+    },
+    "review_status": "transcrito del PDF oficial; pendiente segunda revisión humana"
+  }
+}

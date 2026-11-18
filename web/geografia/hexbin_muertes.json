@@ -1,0 +1,173 @@
+{
+  "estado": "disponible",
+  "titulo": "Malla hexagonal · OIM Missing Migrants Project",
+  "geometria": "hexbin_muertes.geojson",
+  "fuente": {
+    "nombre": "Missing Migrants Project",
+    "organismo": "Organización Internacional para las Migraciones (OIM)",
+    "url": "https://missingmigrants.iom.int/downloads",
+    "url_descarga": "https://data.humdata.org/dataset/fc59785a-31d2-4018-aac7-6b9f619ae8ec/resource/99078436-9c4a-473b-a073-428304a9cf8a/download/iom-missing-migrants-project-data.csv",
+    "licencia": "CC BY-IGO (Creative Commons Attribution for Intergovernmental Organisations 3.0 IGO)",
+    "licencia_url": "https://creativecommons.org/licenses/by/3.0/igo/",
+    "atribucion": "OIM · Missing Migrants Project",
+    "descargado": "2026-11-13",
+    "csv_sha256": "0831c651121cbf67d1d60781efb50561a7dae119ecbdef380aeed237a6a25096",
+    "campo_fecha": "reported_date",
+    "semantica_fecha": "fecha reportada por MMP; no es necesariamente la fecha de la muerte"
+  },
+  "universo": {
+    "rutas": [
+      "US-Mexico border crossing",
+      "Darien",
+      "Caribbean to US",
+      "Caribbean to Central America",
+      "Haiti to Dominican Republic",
+      "Venezuela to Caribbean"
+    ],
+    "encuadre": {
+      "lon0": -118.5,
+      "lon1": -76.5,
+      "lat0": 6.5,
+      "lat1": 33.5
+    },
+    "definicion_muertes": "filas con number_dead > 0",
+    "definicion_desapariciones": "filas con number_missing > 0",
+    "nota_universos": "Muertes y desapariciones son dos subconjuntos de la misma base; no se suman entre sí ni con el agregado del EAAF."
+  },
+  "resumen": {
+    "celdas_totales": 936,
+    "celdas_con_datos": 206,
+    "registros_seleccionados": 6089,
+    "registros_sin_celda": 45,
+    "muertes": {
+      "incidentes": 5926,
+      "personas": 7142
+    },
+    "desapariciones": {
+      "incidentes": 152,
+      "personas": 536
+    },
+    "anios": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "por_anio": {
+      "2014": {
+        "m_inc": 389,
+        "m_per": 435,
+        "d_inc": 2,
+        "d_per": 7
+      },
+      "2015": {
+        "m_inc": 418,
+        "m_per": 562,
+        "d_inc": 1,
+        "d_per": 2
+      },
+      "2016": {
+        "m_inc": 543,
+        "m_per": 667,
+        "d_inc": 10,
+        "d_per": 34
+      },
+      "2017": {
+        "m_inc": 461,
+        "m_per": 522,
+        "d_inc": 5,
+        "d_per": 10
+      },
+      "2018": {
+        "m_inc": 394,
+        "m_per": 455,
+        "d_inc": 6,
+        "d_per": 9
+      },
+      "2019": {
+        "m_inc": 392,
+        "m_per": 538,
+        "d_inc": 11,
+        "d_per": 39
+      },
+      "2020": {
+        "m_inc": 476,
+        "m_per": 501,
+        "d_inc": 5,
+        "d_per": 9
+      },
+      "2021": {
+        "m_inc": 608,
+        "m_per": 843,
+        "d_inc": 16,
+        "d_per": 39
+      },
+      "2022": {
+        "m_inc": 642,
+        "m_per": 779,
+        "d_inc": 65,
+        "d_per": 247
+      },
+      "2023": {
+        "m_inc": 659,
+        "m_per": 778,
+        "d_inc": 17,
+        "d_per": 54
+      },
+      "2024": {
+        "m_inc": 636,
+        "m_per": 725,
+        "d_inc": 8,
+        "d_per": 67
+      },
+      "2025": {
+        "m_inc": 172,
+        "m_per": 185,
+        "d_inc": 3,
+        "d_per": 6
+      },
+      "2026": {
+        "m_inc": 136,
+        "m_per": 152,
+        "d_inc": 3,
+        "d_per": 13
+      }
+    }
+  },
+  "comprobacion": {
+    "suma_celdas_muertes": {
+      "incidentes": 5926,
+      "personas": 7142
+    },
+    "suma_celdas_desapariciones": {
+      "incidentes": 152,
+      "personas": 536
+    },
+    "coincide": true,
+    "registros_sin_celda": 45
+  },
+  "exclusiones": {
+    "filas_csv": 23826,
+    "fuera_de_ruta": 17680,
+    "sin_coordenada": 0,
+    "fuera_del_encuadre": 57,
+    "invalidas": 0,
+    "seleccionadas": 6089
+  },
+  "preparacion": {
+    "crs": "EPSG:4326 para los centros; malla proyectada con Mercator",
+    "transformaciones": "sin reproyección externa; coordenadas del CSV tal como las publica la fuente, filtradas al encuadre",
+    "malla": "hexágonos de radio 11.0 unidades, 936 celdas terrestres"
+  },
+  "sha256": "1e69384434858cbefe9a6bcc16039e1d3d778878ea90b4bd5cbfd3aa69337787",
+  "bytes": 243095
+}

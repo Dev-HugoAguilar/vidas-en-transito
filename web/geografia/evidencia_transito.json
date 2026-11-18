@@ -1,0 +1,51 @@
+{
+  "estado": "disponible",
+  "titulo": "Tránsito migrante documentado · fuentes y períodos",
+  "geometria": "evidencia_transito.geojson",
+  "descripcion": "Zonas estatales que el INM menciona en 2023 como parte de la ruta del tren y de las acciones de rescate. No son trayectos, ni una ruta vigente, ni toda la red.",
+  "periodo": "2023",
+  "entidades": 13,
+  "estados": [
+    "Aguascalientes",
+    "Chihuahua",
+    "Coahuila",
+    "Durango",
+    "Guanajuato",
+    "Hidalgo",
+    "México",
+    "Nuevo León",
+    "Oaxaca",
+    "Puebla",
+    "Querétaro",
+    "Tlaxcala",
+    "Veracruz"
+  ],
+  "fuentes": [
+    {
+      "id": "inm_119_2023",
+      "titulo": "INM · Comunicado 119/23",
+      "fecha": "2023-09-20",
+      "url": "https://www.gob.mx/inm/prensa/propone-inm-a-ferromex-fortalecer-coordinacion-en-acciones-y-estrategias-para-evitar-que-personas-migrantes-arriesguen-su-vida-a-bordo-de-los-trenes",
+      "alcance": "La ruta del tren pasa por estos estados; el INM propuso puntos de verificación en Huehuetoca (Estado de México) y en esos estados."
+    },
+    {
+      "id": "inm_124_2023",
+      "titulo": "INM · Comunicado 124/23",
+      "fecha": "2023-09-22",
+      "url": "https://www.gob.mx/inm/prensa/acuerdan-inm-y-ferromex-acciones-con-los-tres-niveles-de-gobierno-y-cbp-para-la-ruta-del-sistema-ferroviario-a-fin-de-que-las-personas-migrantes-no-arriesguen-su-vida-a-bordo?idiom=es-MX",
+      "alcance": "658 acciones en el sistema ferroviario y 8 988 personas migrantes rescatadas entre enero y septiembre de 2023 en estos estados."
+    }
+  ],
+  "referencias_sin_geometria": [
+    {
+      "titulo": "El Colegio de México · mapa de rutas de trenes de carga utilizadas por migrantes",
+      "fecha": "2014",
+      "url": "https://repositorio.colmex.mx/concern/archival_documents/765372448",
+      "nota": "Referencia histórica de 2014. Licencia CC BY-NC-ND: no se copia ni se adapta su geometría; no se dibuja."
+    }
+  ],
+  "geometria_zonas": "Natural Earth 10m admin-1 (dominio público), simplificada a 0,01°",
+  "licencia_zonas": "Dominio público (Natural Earth); los textos y cifras citados son del INM",
+  "sha256": "314ab5ada5cee301ecbaa9045800791f363c19ca953bb7a13f918aef87e34dc2",
+  "creado": "2026-11-13"
+}

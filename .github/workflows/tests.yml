@@ -1,0 +1,56 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  integridad:
+    name: Integridad del repositorio
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verificar archivos obligatorios
+        run: |
+          set -eu
+          for archivo in web/index.html web/data.json web/fuentes_ampliadas.json docs/FUENTES_Y_LIMITES.md; do
+            test -s "$archivo" || { echo "Falta $archivo"; exit 1; }
+          done
+      - name: Verificar que no se publiquen credenciales
+        run: |
+          set -eu
+          # Se excluye .github porque este mismo archivo enumera los patrones:
+          # buscarlos sobre sí mismo produce un positivo falso. El escaneo local
+          # (tools/escanear-secretos.ps1 del arnés) sí revisa .github.
+          if grep -rIl --exclude-dir=.git --exclude-dir=.github -E '(mongodb(\+srv)?://[^"[:space:]]*:[^"[:space:]]*@|sk-[A-Za-z0-9]{16,}|gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY)' .; then
+            echo "Se detectaron posibles credenciales"; exit 1
+          fi
+          echo "Sin credenciales detectadas"
+
+  pruebas:
+    name: Pruebas de dominio
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Instalar dependencias de desarrollo
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt
+
+      - name: Ejecutar pruebas
+        run: python -m pytest -q
+
+      - name: Comprobar sintaxis de los scripts
+        run: python -m compileall -q .

@@ -1,0 +1,59 @@
+{
+  "version": "0.13.0",
+  "generated_at": "2026-11-12",
+  "status": "local_only",
+  "main": "index.html",
+  "data_files": [
+    "data.json",
+    "fuentes_ampliadas.json"
+  ],
+  "new_chart_panels": 20,
+  "sources": [
+    "OIM DTM route portal",
+    "UPMRIP/SEGOB",
+    "ICIJ/CLIP",
+    "OIM DTM ArcGIS"
+  ],
+  "files": [
+    {
+      "path": "FUENTES_Y_LIMITES.md",
+      "bytes": 5429,
+      "sha256": "951ad84b69803c6b6a29891e29aaaa04f8dfbd7d5cc9faa6f4f74ebaaba220e3"
+    },
+    {
+      "path": "INVENTARIO_GRAFICAS.md",
+      "bytes": 1411,
+      "sha256": "5ae1edcd1a230dac7e300c4011a38cc2ea9b690a6f178c6be2bd4505f73bc923"
+    },
+    {
+      "path": "LEEME.md",
+      "bytes": 2221,
+      "sha256": "7286d06bc7eeef43abb5fcaabc31bd1cb654d810c61fb90299f8d97adfc41765"
+    },
+    {
+      "path": "data.json",
+      "bytes": 31917,
+      "sha256": "5b9f1f9b0a860d2043fe5ba68222d5bfcaab9a67f1a357527f9aafacdee69494"
+    },
+    {
+      "path": "derive_data.py",
+      "bytes": 10463,
+      "sha256": "f27afd298a54afe63722bacad9085a7dcb971bd62c78ea1ee7747771d83736ce"
+    },
+    {
+      "path": "fuentes_ampliadas.json",
+      "bytes": 164065,
+      "sha256": "19ec4aae287a9da3a3dbc21167edfb3a915c1fe057fa351277104da07bcb63b1"
+    },
+    {
+      "path": "index.html",
+      "bytes": 93157,
+      "sha256": "3f7cbf5e0b20c74a3c4f677cb75e29e918a3388177652a925b6fdaa429a7db13"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 12,
+      "sha256": "af96689474506e809b7b2aa961079264560f85bd818e397220f457704629d518"
+    }
+  ]
+}

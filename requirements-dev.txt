@@ -1,0 +1,2 @@
+# Dependencias de desarrollo y prueba del contrato de datos.
+pytest==8.4.2
