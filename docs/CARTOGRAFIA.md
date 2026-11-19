@@ -2,7 +2,7 @@
 
 Documenta de dónde sale cada capa del mapa de «Cartografía de evidencia», cómo se
 procesó, qué licencia tiene y qué **no** se pudo verificar. La geometría vive en
-`runtime/geografia/` y se publica en `dist/dashboards/vidas-en-transito/geografia/`;
+`web/geografia/` (el runtime publicado) y `construir.py` la copia a `dist/geografia/`;
 las capas base y ferroviaria se regeneran con `preparar_cartografia.py` y las zonas
 del INM con `preparar_evidencia.py`.
 
@@ -196,14 +196,14 @@ selección por clic, toque o teclado y etiquetas geográficas conmutables.
 ## Reproducir
 
 ```bash
-python dashboards/vidas-en-transito/preparar_cartografia.py
-python dashboards/vidas-en-transito/preparar_evidencia.py
-python dashboards/vidas-en-transito/construir.py
-node tools/verificar-mapa-vidas.mjs
+python pipeline/preparar_cartografia.py
+python pipeline/preparar_evidencia.py
+python pipeline/construir.py
 ```
 
 `preparar_cartografia.py` requiere `geopandas` y `shapely`; descarga Natural Earth a
-`insumos_fuente/` (no se versiona) y escribe los tres archivos de `runtime/geografia/`.
+la carpeta de insumos excluidos (no se versiona) y escribe los tres archivos de
+`web/geografia/`.
 `preparar_evidencia.py` descarga el ZIP admin-1 de Natural Earth si falta (o acepta
 `--zip`) y escribe `evidencia_transito.geojson`; con el ZIP usado el 13-nov-2026
 reproduce byte a byte el archivo publicado (SHA-256 `314ab5ada5cee301…`).
@@ -230,7 +230,7 @@ reproduce byte a byte el archivo publicado (SHA-256 `314ab5ada5cee301…`).
   1200×820, misma fórmula del mapa de Panorama), **206 con datos**.
   `geografia/hexbin_muertes.geojson` (243 KB, SHA-256 `1e693844…`) y
   `hexbin_muertes.json` con totales, exclusiones y comprobación de suma.
-- **Regeneración.** `python dashboards/vidas-en-transito/preparar_hexbin.py`
+- **Regeneración.** `python pipeline/preparar_hexbin.py`
   descarga el CSV de HDX y el ZIP admin-1 de Natural Earth si faltan, y escribe
   la malla, los metadatos y `estados_mexico.geojson` (32 entidades).
 - **Base cartográfica.** `paises_hex.geojson` (Natural Earth 50m, dominio

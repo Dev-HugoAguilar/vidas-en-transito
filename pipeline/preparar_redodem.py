@@ -7,7 +7,15 @@ Lee el CSV oficial de monitoreo de protección (40,800 filas), calcula:
   · destino capturado × grupo etario (solo filas con destino distinto de NA)
   · destino capturado × género (solo filas con destino distinto de NA)
 
-Escribe esos agregados en runtime/data.json. No redistribuye el CSV.
+Escribe esos agregados en web/data.json. No redistribuye el CSV.
+
+Uso:
+    python pipeline/preparar_redodem.py --csv RUTA --data RUTA
+    python pipeline/preparar_redodem.py --insumos RUTA
+
+La carpeta de insumos excluidos (XLS/CSV/ZIP que no se publican) se indica con
+`--insumos` o con la variable de entorno MIGRATION_SOURCE_DIR; por defecto se
+espera `pipeline/insumos_fuente/`, que no se versiona.
 """
 from __future__ import annotations
 
@@ -16,13 +24,16 @@ import csv
 import hashlib
 import io
 import json
+import os
 import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
-AQUI = Path(__file__).resolve().parent
-CSV_DEFECTO = AQUI / "insumos_fuente" / "base_monitoreo-de-proteccion_redodem.csv"
-DATA_DEFECTO = AQUI / "runtime" / "data.json"
+RAIZ = Path(__file__).resolve().parents[1]
+WEB = RAIZ / "web"
+INSUMOS_POR_DEFECTO = Path(os.environ.get("MIGRATION_SOURCE_DIR", RAIZ / "pipeline" / "insumos_fuente"))
+CSV_DEFECTO = INSUMOS_POR_DEFECTO / "base_monitoreo-de-proteccion_redodem.csv"
+DATA_DEFECTO = WEB / "data.json"
 URL_FUENTE = "https://monitoreo-de-proteccion.redodem.org/csv/base_monitoreo-de-proteccion_redodem.zip"
 EDADES = ["Niñxs", "Adolescentes", "Adultos jóvenes", "Adultos", "Adultos mayores", "No especificado"]
 GENEROS = ["Hombre", "Mujer", "Persona no binaria", "No especificado"]
@@ -54,14 +65,39 @@ def clave_categorias(categorias: list[str]) -> tuple[str, ...]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--csv", type=Path, default=CSV_DEFECTO)
-    parser.add_argument("--data", type=Path, default=DATA_DEFECTO)
+    parser.add_argument(
+        "--insumos",
+        type=Path,
+        default=INSUMOS_POR_DEFECTO,
+        help="carpeta con los insumos excluidos (por defecto: pipeline/insumos_fuente)",
+    )
+    parser.add_argument(
+        "--csv",
+        type=Path,
+        default=None,
+        help="CSV o ZIP de REDODEM (por defecto: <insumos>/base_monitoreo-de-proteccion_redodem.csv)",
+    )
+    parser.add_argument(
+        "--data",
+        type=Path,
+        default=DATA_DEFECTO,
+        help="data.json publicado que se amplía (por defecto: web/data.json)",
+    )
     args = parser.parse_args()
+    if args.csv is None:
+        args.csv = args.insumos / CSV_DEFECTO.name
 
     if not args.csv.exists():
-        raise SystemExit(f"falta el CSV o ZIP de origen: {args.csv}")
+        raise SystemExit(
+            f"falta el CSV o ZIP de origen: {args.csv}\n"
+            "  descárgalo de la fuente oficial y guárdalo en la carpeta de insumos\n"
+            "  (--insumos RUTA o MIGRATION_SOURCE_DIR); ver pipeline/README.md."
+        )
     if not args.data.exists():
-        raise SystemExit(f"falta data.json: {args.data}")
+        raise SystemExit(
+            f"falta data.json: {args.data}\n"
+            "  se espera web/data.json dentro del clon; no se busca en la ruta del monorepo."
+        )
 
     if args.csv.suffix.lower() == ".zip":
         with zipfile.ZipFile(args.csv) as paquete:

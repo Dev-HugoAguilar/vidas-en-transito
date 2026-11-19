@@ -91,26 +91,28 @@ alojadas durante un periodo no equivale a la ocupación simultánea.
 
 ## Reproducción de la derivación
 
-Descarga manualmente los cuadros UPMRIP XLS 1.1–1.4 y 2.1–2.4, más `icij_clip_cases.csv`, desde sus portales originales y guárdalos en `insumos_fuente/` con los nombres descritos en el código. Instala `xlrd>=2.0.1` y ejecuta:
+Descarga manualmente los cuadros UPMRIP XLS 1.1–1.4 y 2.1–2.4, más `icij_clip_cases.csv`, desde sus portales originales y guárdalos en la carpeta de insumos excluidos con los nombres descritos en el código (por defecto `pipeline/insumos_fuente/`, o la que indiques con `--insumos` / `MIGRATION_SOURCE_DIR`). Instala `xlrd>=2.0.1` y ejecuta:
 
 ```bash
-python derive_data.py
+python pipeline/derive_data.py
 ```
 
-El script consulta agregados de OIM ArcGIS y reescribe `fuentes_ampliadas.json`. Se necesita conexión de red.
+El script consulta agregados de OIM ArcGIS y reescribe `web/fuentes_ampliadas.json`. Se necesita conexión de red.
 
-Para los cruces REDODEM, descarga el ZIP oficial de la base de monitoreo en `insumos_fuente/` y ejecuta:
+Para los cruces REDODEM, descarga el ZIP oficial de la base de monitoreo en la carpeta de insumos y ejecuta:
 
 ```bash
-python preparar_redodem.py --csv insumos_fuente/base_monitoreo-de-proteccion_redodem.zip
+python pipeline/preparar_redodem.py --csv RUTA/base_monitoreo-de-proteccion_redodem.zip
 ```
 
 Para reconstruir el detalle EAAF desde la transcripción estructurada y actualizar el respaldo embebido:
 
 ```bash
-python preparar_eaaf.py
+python pipeline/preparar_eaaf.py
 ```
 
 Es una herramienta offline: no se ejecuta al servir el sitio ni desde `construir.py`. Conserva `missing_search_aggregates` (cinco indicadores del Panorama) y escribe `eaaf_public_detail` y `#eaaf-inline-data`.
 
-El script acepta CSV o ZIP, calcula país/destino × grupo etario y género, valida la reconciliación con 40,800 filas y 6,059 destinos, y publica solo los agregados en `runtime/data.json`. El CSV crudo no se copia al build.
+El script acepta CSV o ZIP, calcula país/destino × grupo etario y género, valida la reconciliación con 40,800 filas y 6,059 destinos, y publica solo los agregados en `web/data.json`. El CSV crudo no se copia al build.
+
+El orden completo de ejecución, los nombres de archivo de cada insumo y sus fuentes están en [`pipeline/README.md`](../pipeline/README.md).

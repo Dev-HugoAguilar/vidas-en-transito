@@ -5,10 +5,10 @@ microdatos. El grano de salida es una observación por indicador, corte, dimensi
 de desglose y categoría publicada. Conserva las unidades separadas y no infiere
 variables demográficas no publicadas.
 
-Uso, desde esta carpeta:
-    python preparar_eaaf.py
+Uso, desde la raíz del clon:
+    python pipeline/preparar_eaaf.py
 
-Actualiza `runtime/data.json` y el respaldo EAAF embebido de `runtime/index.html`.
+Actualiza `web/data.json` y el respaldo EAAF embebido de `web/index.html`.
 No forma parte del runtime ni se ejecuta durante `construir.py`; solo se necesita
 cuando se revisa o corrige la transcripción. No altera `missing_search_aggregates`
 para no cambiar los cinco indicadores del Panorama: el total de 406
@@ -19,8 +19,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parent
-RUNTIME = BASE / "runtime"
+RAIZ = Path(__file__).resolve().parents[1]
+RUNTIME = RAIZ / "web"
 DATA_PATH = RUNTIME / "data.json"
 HTML_PATH = RUNTIME / "index.html"
 SOURCE_URL = (
