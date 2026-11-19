@@ -16,17 +16,19 @@ Filtros: rutas del corredor del proyecto (las mismas seis etiquetas que usa
 ``data.json``), coordenadas parseables dentro del encuadre México-Centroamérica y
 frontera sur de EE. UU. Las filas fuera del encuadre se cuentan y se declaran.
 
-Salidas:
-- ``runtime/geografia/hexbin_muertes.geojson``: celdas terrestres con agregados.
-- ``runtime/geografia/hexbin_muertes.json``: metadatos, totales y comprobaciones.
-- ``runtime/geografia/estados_mexico.geojson``: límites estatales (Natural Earth).
+Salidas (dentro de `web/`, el runtime publicado):
+- ``web/geografia/hexbin_muertes.geojson``: celdas terrestres con agregados.
+- ``web/geografia/hexbin_muertes.json``: metadatos, totales y comprobaciones.
+- ``web/geografia/estados_mexico.geojson``: límites estatales (Natural Earth).
 
 Uso:
-    python dashboards/vidas-en-transito/preparar_hexbin.py
-    python dashboards/vidas-en-transito/preparar_hexbin.py --csv RUTA --sin-estados
+    python pipeline/preparar_hexbin.py
+    python pipeline/preparar_hexbin.py --csv RUTA --sin-estados
+    python pipeline/preparar_hexbin.py --insumos RUTA
 
-Requiere shapely y geopandas. El CSV y el ZIP de Natural Earth se descargan a
-``insumos_fuente/`` si no están (no se publican).
+Requiere shapely y geopandas. El CSV y el ZIP de Natural Earth se descargan a la
+carpeta de insumos excluidos (por defecto ``pipeline/insumos_fuente/``; se puede
+indicar con ``--insumos`` o con MIGRATION_SOURCE_DIR). No se publican.
 """
 from __future__ import annotations
 
@@ -35,6 +37,7 @@ import csv
 import hashlib
 import json
 import math
+import os
 import urllib.request
 from collections import defaultdict
 from datetime import date
@@ -44,9 +47,10 @@ import geopandas as gpd
 from shapely.geometry import Point, mapping
 from shapely.prepared import prep
 
-AQUI = Path(__file__).resolve().parent
-GEOGRAFIA = AQUI / "runtime" / "geografia"
-INSUMOS = AQUI / "insumos_fuente"
+RAIZ = Path(__file__).resolve().parents[1]
+WEB = RAIZ / "web"
+GEOGRAFIA = WEB / "geografia"
+INSUMOS = Path(os.environ.get("MIGRATION_SOURCE_DIR", RAIZ / "pipeline" / "insumos_fuente"))
 
 URL_MMP = "https://data.humdata.org/dataset/fc59785a-31d2-4018-aac7-6b9f619ae8ec/resource/99078436-9c4a-473b-a073-428304a9cf8a/download/iom-missing-migrants-project-data.csv"
 URL_ADMIN1 = "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_1_states_provinces.zip"
@@ -220,15 +224,33 @@ def principales(valores: list[str], limite: int = 4) -> list[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Genera la malla hexagonal de muertes y desapariciones.")
-    parser.add_argument("--csv", type=Path, default=INSUMOS / "mmp.csv")
-    parser.add_argument("--admin1", type=Path, default=INSUMOS / "ne_10m_admin_1_states_provinces.zip")
+    parser.add_argument(
+        "--insumos",
+        type=Path,
+        default=INSUMOS,
+        help="carpeta con los insumos excluidos (por defecto: pipeline/insumos_fuente)",
+    )
+    parser.add_argument("--csv", type=Path, default=None, help="CSV de OIM MMP")
+    parser.add_argument("--admin1", type=Path, default=None, help="ZIP admin-1 de Natural Earth")
     parser.add_argument("--sin-estados", action="store_true")
     args = parser.parse_args()
+    if args.csv is None:
+        args.csv = args.insumos / "mmp.csv"
+    if args.admin1 is None:
+        args.admin1 = args.insumos / "ne_10m_admin_1_states_provinces.zip"
+    if not (args.insumos / "ne_50m_admin_0_countries.geojson").exists():
+        raise SystemExit(
+            f"falta {args.insumos / 'ne_50m_admin_0_countries.geojson'}\n"
+            "  ejecuta antes `python pipeline/preparar_cartografia.py` o descarga"
+            " Natural Earth 50m en la carpeta de insumos (--insumos o"
+            " MIGRATION_SOURCE_DIR); ver pipeline/README.md."
+        )
+    GEOGRAFIA.mkdir(parents=True, exist_ok=True)
 
     csv_ruta = args.csv if args.csv.exists() else descargar(URL_MMP, args.csv)
     registros, exclusiones = leer_mmp(csv_ruta)
 
-    mundo = gpd.read_file(INSUMOS / "ne_50m_admin_0_countries.geojson")
+    mundo = gpd.read_file(args.insumos / "ne_50m_admin_0_countries.geojson")
     contexto = mundo.cx[ENCUADRE["lon0"]:ENCUADRE["lon1"], ENCUADRE["lat0"]:ENCUADRE["lat1"]].copy()
     contexto["geometry"] = contexto.geometry.simplify(0.02, preserve_topology=True)
     paises_hex = {
@@ -329,7 +351,7 @@ def main() -> int:
             asignado["desapariciones"]["personas"] += desaparecidos
 
     # ICIJ/CLIP: se agrega con la misma malla para la capa contextual.
-    icij = json.loads((AQUI / "runtime" / "fuentes_ampliadas.json").read_text(encoding="utf-8"))["icij_clip"]["points"]
+    icij = json.loads((WEB / "fuentes_ampliadas.json").read_text(encoding="utf-8"))["icij_clip"]["points"]
     for punto in icij:
         if "lat" not in punto or "lon" not in punto:
             continue

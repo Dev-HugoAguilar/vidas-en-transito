@@ -1,25 +1,31 @@
 # -*- coding: utf-8 -*-
 """Deriva las series de eventos y devoluciones desde los cuadros 3.1 y 3.2.3.
 
-Lee los XLS oficiales archivados en `insumos_fuente/eventos_migratorios/`,
-valida que los totales coincidan con los subtotales mensuales y la suma de los
-tipos de resolución, y publica `eventos_migratorios` y `devoluciones` en
-`runtime/data.json`.
+Lee los XLS oficiales archivados en la carpeta de insumos excluidos (por defecto
+`pipeline/insumos_fuente/eventos_migratorios/`), valida que los totales coincidan
+con los subtotales mensuales y la suma de los tipos de resolución, y publica
+`eventos_migratorios` y `devoluciones` en `web/data.json`.
 
 No descarga datos ni modifica las demás claves de data.json.
 
-Uso: python dashboards/vidas-en-transito/preparar_eventos_migratorios.py
+Uso:
+    python pipeline/preparar_eventos_migratorios.py
+    python pipeline/preparar_eventos_migratorios.py --insumos RUTA
 """
 from __future__ import annotations
 
+import argparse
 import json
+import os
 from pathlib import Path
 
 import xlrd
 
-AQUI = Path(__file__).resolve().parent
-FUENTES = AQUI / "insumos_fuente" / "eventos_migratorios"
-DATA = AQUI / "runtime" / "data.json"
+RAIZ = Path(__file__).resolve().parents[1]
+WEB = RAIZ / "web"
+INSUMOS = Path(os.environ.get("MIGRATION_SOURCE_DIR", RAIZ / "pipeline" / "insumos_fuente"))
+FUENTES = INSUMOS / "eventos_migratorios"
+DATA = WEB / "data.json"
 
 # Fecha de consulta de los cuadros archivados. Se fija para que el build sea
 # reproducible; actualízala solo si se vuelven a descargar los XLS.
@@ -153,6 +159,28 @@ def leer_devoluciones(anio: int) -> dict:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Deriva eventos y devoluciones de los cuadros 3.1 y 3.2.3.")
+    parser.add_argument(
+        "--insumos",
+        type=Path,
+        default=INSUMOS,
+        help="carpeta con los insumos excluidos (por defecto: pipeline/insumos_fuente)",
+    )
+    args = parser.parse_args()
+    global FUENTES
+    FUENTES = args.insumos / "eventos_migratorios"
+    if not FUENTES.is_dir():
+        raise SystemExit(
+            f"falta la carpeta de cuadros oficiales: {FUENTES}\n"
+            "  descárgalos de UPMRIP/SEGOB y guárdalos ahí (--insumos RUTA o"
+            " MIGRATION_SOURCE_DIR); ver pipeline/README.md."
+        )
+    if not DATA.exists():
+        raise SystemExit(
+            f"falta data.json: {DATA}\n"
+            "  se espera web/data.json dentro del clon; no se busca en la ruta del monorepo."
+        )
+
     serie = []
     for anio in sorted(COBERTURA):
         total, meses = leer_total(anio)

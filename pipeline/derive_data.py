@@ -2,8 +2,12 @@ import json, csv, glob, os, re, math, collections, urllib.parse, urllib.request
 from pathlib import Path
 import xlrd
 BASE=Path(__file__).resolve().parent
+RAIZ=BASE.parent
+WEB=RAIZ/'web'
+# Carpeta de insumos excluidos: XLS/CSV que no se versionan. Se indica con la
+# variable de entorno MIGRATION_SOURCE_DIR o, por defecto, pipeline/insumos_fuente.
 src=os.environ.get('MIGRATION_SOURCE_DIR',str(BASE/'insumos_fuente'))
-out=str(BASE)
+out=str(WEB)
 def workbook(name): return xlrd.open_workbook(os.path.join(src,name),on_demand=True).sheet_by_index(0)
 def v(s,r,c):
  try:return s.cell_value(r,c)

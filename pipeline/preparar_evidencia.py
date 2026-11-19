@@ -16,26 +16,31 @@ Earth (admin-1, 10m, dominio público), simplificado a 0,01°. No se copia ning�
 del INM ni de El Colegio de México.
 
 Uso:
-    python dashboards/vidas-en-transito/preparar_evidencia.py
-    python dashboards/vidas-en-transito/preparar_evidencia.py --zip RUTA --salida RUTA
+    python pipeline/preparar_evidencia.py
+    python pipeline/preparar_evidencia.py --zip RUTA --salida RUTA
+    python pipeline/preparar_evidencia.py --insumos RUTA
 
-Requiere geopandas. Si falta el ZIP de Natural Earth, se descarga a `insumos_fuente/`.
-El resultado publicado se verifica con `MANIFEST_LOCAL.json` y `construir.py --comprobar`.
+Requiere geopandas. Si falta el ZIP de Natural Earth, se descarga a la carpeta de
+insumos (por defecto `pipeline/insumos_fuente/`, que no se versiona; se puede
+indicar con `--insumos` o con MIGRATION_SOURCE_DIR). Escribe en `web/geografia/`.
+El resultado publicado se verifica con `docs/MANIFEST_LOCAL.json` y
+`construir.py --comprobar`.
 """
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
+import os
 import urllib.request
 from pathlib import Path
 
 import geopandas as gpd
 from shapely.geometry import mapping
 
-AQUI = Path(__file__).resolve().parent
-GEOGRAFIA = AQUI / "runtime" / "geografia"
-INSUMOS = AQUI / "insumos_fuente"
+RAIZ = Path(__file__).resolve().parents[1]
+GEOGRAFIA = RAIZ / "web" / "geografia"
+INSUMOS = Path(os.environ.get("MIGRATION_SOURCE_DIR", RAIZ / "pipeline" / "insumos_fuente"))
 ZIP_POR_DEFECTO = INSUMOS / "ne_admin1.zip"
 URL_NATURAL_EARTH = "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_1_states_provinces.zip"
 FECHA_CORTE = "2026-11-13"
@@ -150,9 +155,17 @@ def construir(zip_natural_earth: Path) -> dict:
 
 def principal() -> int:
     parser = argparse.ArgumentParser(description="Genera las zonas estatales del INM 2023.")
-    parser.add_argument("--zip", type=Path, default=ZIP_POR_DEFECTO, help="ZIP de Natural Earth admin-1")
+    parser.add_argument(
+        "--insumos",
+        type=Path,
+        default=INSUMOS,
+        help="carpeta con los insumos excluidos (por defecto: pipeline/insumos_fuente)",
+    )
+    parser.add_argument("--zip", type=Path, default=None, help="ZIP de Natural Earth admin-1")
     parser.add_argument("--salida", type=Path, default=GEOGRAFIA / "evidencia_transito.geojson")
     args = parser.parse_args()
+    if args.zip is None:
+        args.zip = args.insumos / ZIP_POR_DEFECTO.name
 
     documento = construir(descargar_si_falta(args.zip))
     texto = json.dumps(documento, ensure_ascii=False, separators=(",", ":"))

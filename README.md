@@ -112,15 +112,21 @@ docs/                     Fuentes, cartografía, inventario y método
 
 ## Reproducir los agregados
 
-Los scripts requieren los insumos descargados localmente:
+Los scripts de `pipeline/` derivan los agregados desde los insumos descargados
+localmente y `construir.py` publica la copia servible. El orden, los nombres de
+archivo y las fuentes de cada insumo están en
+[`pipeline/README.md`](pipeline/README.md); la carpeta de insumos excluidos se
+indica con `--insumos RUTA` o con `MIGRATION_SOURCE_DIR`:
 
 ```bash
 python -m pip install -r pipeline/requirements.txt
-cd pipeline
-python derive_data.py        # UPMRIP, ICIJ/CLIP y capa OIM
-python preparar_redodem.py   # cruces, UpSet y matriz con umbral de privacidad
-python construir.py          # empaqueta la copia servible
+python pipeline/derive_data.py                              # UPMRIP, ICIJ/CLIP y capa OIM
+python pipeline/preparar_redodem.py --insumos RUTA          # cruces, UpSet y matriz con umbral 5
+python pipeline/construir.py                                # publica dist/ verificando hashes
 ```
+
+`construir.py` funciona sin insumos: verifica `web/` contra
+`docs/MANIFEST_LOCAL.json` y copia los 15 archivos publicados a `dist/`.
 
 `preparar_eaaf.py` es una herramienta sin conexión que reconstruye el detalle
 EAAF desde la transcripción del PDF; no forma parte del runtime.

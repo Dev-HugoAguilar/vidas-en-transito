@@ -15,12 +15,20 @@ Genera, a partir de fuentes verificables y sin servicios en tiempo de ejecución
   respondió HTTP 403. Se documentan el intento, la licencia, la fecha de
   actualización y el enlace, y **no se inventa geometría**.
 
-Uso: python -X utf8 dashboards/vidas-en-transito/preparar_cartografia.py
+Uso:
+    python -X utf8 pipeline/preparar_cartografia.py
+    python -X utf8 pipeline/preparar_cartografia.py --insumos RUTA
+
+Escribe en `web/geografia/`, el runtime publicado, e insumos que no se versionan
+en la carpeta indicada por `--insumos` o MIGRATION_SOURCE_DIR (por defecto,
+`pipeline/insumos_fuente/`).
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
+import os
 import urllib.request
 from pathlib import Path
 
@@ -28,10 +36,19 @@ import geopandas as gpd
 from shapely.geometry import box
 from shapely.ops import unary_union
 
-BASE = Path(__file__).resolve().parent
-SALIDA = BASE / "runtime" / "geografia"
+_parser = argparse.ArgumentParser(description="Prepara la cartografía local del tablero.")
+_parser.add_argument(
+    "--insumos",
+    type=Path,
+    default=Path(os.environ.get("MIGRATION_SOURCE_DIR", Path(__file__).resolve().parents[1] / "pipeline" / "insumos_fuente")),
+    help="carpeta con los insumos excluidos (por defecto: pipeline/insumos_fuente)",
+)
+ARGS, _ = _parser.parse_known_args()
+
+RAIZ = Path(__file__).resolve().parents[1]
+SALIDA = RAIZ / "web" / "geografia"
 SALIDA.mkdir(parents=True, exist_ok=True)
-INSUMOS = BASE / "insumos_fuente"
+INSUMOS = ARGS.insumos
 INSUMOS.mkdir(parents=True, exist_ok=True)
 
 NE_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson"

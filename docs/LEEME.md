@@ -60,8 +60,8 @@ El detalle de las visualizaciones nuevas está en `INVENTARIO_GRAFICAS.md`. La p
 - `data.json`: datos derivados de las visualizaciones previas (MMP, El Paso, EAAF y REDODEM), incluidos los agregados de motivos, coaparición y cobertura anual.
 - `fuentes_ampliadas.json`: agregados y puntos publicados necesarios para esta ampliación.
 - `derive_data.py`: reproducción de agregados UPMRIP/ICIJ/ArcGIS a partir de fuentes descargadas localmente y del servicio ArcGIS.
-- `preparar_redodem.py`: calcula y publica en `runtime/data.json` los cruces país/destino × grupo etario y género, el UpSet de motivos, la matriz de coaparición con umbral de privacidad y la cobertura anual desde el CSV oficial de REDODEM; valida filas, menciones, combinaciones y coapariciones con identificadores de fila distintos.
-- `preparar_eaaf.py`: herramienta offline que reconstruye `eaaf_public_detail` desde la transcripción estructurada del PDF y actualiza el respaldo embebido. No forma parte del runtime ni se ejecuta en `construir.py`. Uso: `python preparar_eaaf.py` desde esta carpeta.
+- `preparar_redodem.py`: calcula y publica en `web/data.json` los cruces país/destino × grupo etario y género, el UpSet de motivos, la matriz de coaparición con umbral de privacidad y la cobertura anual desde el CSV oficial de REDODEM; valida filas, menciones, combinaciones y coapariciones con identificadores de fila distintos.
+- `preparar_eaaf.py`: herramienta offline que reconstruye `eaaf_public_detail` desde la transcripción estructurada del PDF y actualiza el respaldo embebido. No forma parte del runtime ni se ejecuta en `construir.py`. Uso: `python pipeline/preparar_eaaf.py` desde la raíz del clon.
 - `FUENTES_Y_LIMITES.md`: fuentes, definiciones, periodos, licencias y exclusiones.
 
-Los archivos de origen XLS y CSV no se redistribuyen en este paquete. El script espera que se descarguen manualmente a `insumos_fuente/` con los nombres indicados en `FUENTES_Y_LIMITES.md`.
+Los archivos de origen XLS y CSV no se redistribuyen en este paquete. El script espera que se descarguen manualmente a la carpeta de insumos excluidos, con los nombres indicados en `FUENTES_Y_LIMITES.md` y en `pipeline/README.md`.
